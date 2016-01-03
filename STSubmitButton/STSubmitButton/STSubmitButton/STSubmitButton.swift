@@ -144,6 +144,7 @@ extension STSubmitButton {
         guard !isAnimating else {
             return
         }
+        isAnimating = true
         zoomInAnimation()
         loadingAnimation()
     }
