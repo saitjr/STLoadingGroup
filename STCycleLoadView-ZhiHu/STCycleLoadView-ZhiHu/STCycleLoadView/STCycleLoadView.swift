@@ -37,6 +37,15 @@ class STCycleLoadView: UIView {
     private let cycleLayer: CAShapeLayer = CAShapeLayer()
     private var isAnimation: Bool = false
     
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupUI()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         setupUI()
