@@ -19,17 +19,25 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wMi-Bv-Vgl" customClass="STCycleLoadView" customModule="STCycleLoadView_SubmitButton" customModuleProvider="target">
                                 <rect key="frame" x="135" y="259" width="50" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.13333334028720856" green="0.73725491762161255" blue="0.3333333432674408" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="a4B-Gi-g9I"/>
                                     <constraint firstAttribute="height" constant="50" id="fid-tz-rTo"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Touch to start" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wge-y7-g9e">
+                                <rect key="frame" x="106.5" y="517.5" width="107" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.13333334028720856" green="0.73725491762161255" blue="0.3333333432674408" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="wMi-Bv-Vgl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="91f-UO-Ykm"/>
                             <constraint firstItem="wMi-Bv-Vgl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KcD-47-7ed"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wge-y7-g9e" secondAttribute="bottom" constant="30" id="PdJ-Fl-zne"/>
+                            <constraint firstItem="wge-y7-g9e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j00-rn-4q4"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>

@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         cycleLoadView.startAnimation()
 
-        let popTime = dispatch_time(DISPATCH_TIME_NOW, Int64( Double(NSEC_PER_SEC) * 5))
+        let popTime = dispatch_time(DISPATCH_TIME_NOW, Int64( Double(NSEC_PER_SEC) * 8))
         
         dispatch_after(popTime, dispatch_get_main_queue()) {
             self.cycleLoadView.stopAnimation()

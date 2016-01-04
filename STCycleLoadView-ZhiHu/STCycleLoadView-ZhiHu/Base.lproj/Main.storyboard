@@ -19,17 +19,25 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xr2-1W-QLW" customClass="STCycleLoadView" customModule="STCycleLoadView_ZhiHu" customModuleProvider="target">
                                 <rect key="frame" x="135" y="259" width="50" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.11372549086809158" green="0.41568627953529358" blue="0.67843139171600342" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="foJ-zh-ODU"/>
                                     <constraint firstAttribute="height" constant="50" id="u3u-f3-CaL"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Touch to start" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KSA-Vj-P66">
+                                <rect key="frame" x="106.5" y="517.5" width="107" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.11372549086809158" green="0.41568627953529358" blue="0.67843139171600342" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Xr2-1W-QLW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4f6-B5-GwT"/>
                             <constraint firstItem="Xr2-1W-QLW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RCo-iP-O3J"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KSA-Vj-P66" secondAttribute="bottom" constant="30" id="mEi-Hl-m33"/>
+                            <constraint firstItem="KSA-Vj-P66" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tkQ-L9-aer"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>

@@ -34,6 +34,6 @@ import UIKit
 
 struct STConfiguration {
     static let LineWidth: CGFloat = 4.0
-    static let MainColor: UIColor = UIColor.lightGrayColor()
-    static let AnimationDuration: NSTimeInterval = 1.4
+    static let MainColor: UIColor = UIColor.whiteColor()
+    static let AnimationDuration: NSTimeInterval = 1
 }
