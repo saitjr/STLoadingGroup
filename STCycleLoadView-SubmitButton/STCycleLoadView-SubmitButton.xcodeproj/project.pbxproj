@@ -1,0 +1,523 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		965333E51C39F9E500F5CF57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965333E41C39F9E500F5CF57 /* AppDelegate.swift */; };
+		965333E71C39F9E500F5CF57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965333E61C39F9E500F5CF57 /* ViewController.swift */; };
+		965333EA1C39F9E500F5CF57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 965333E81C39F9E500F5CF57 /* Main.storyboard */; };
+		965333EC1C39F9E500F5CF57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 965333EB1C39F9E500F5CF57 /* Assets.xcassets */; };
+		965333EF1C39F9E500F5CF57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 965333ED1C39F9E500F5CF57 /* LaunchScreen.storyboard */; };
+		965333FA1C39F9E500F5CF57 /* STCycleLoadView_SubmitButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965333F91C39F9E500F5CF57 /* STCycleLoadView_SubmitButtonTests.swift */; };
+		965334051C39F9E500F5CF57 /* STCycleLoadView_SubmitButtonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965334041C39F9E500F5CF57 /* STCycleLoadView_SubmitButtonUITests.swift */; };
+		965334141C39FA0800F5CF57 /* STConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965334131C39FA0800F5CF57 /* STConfiguration.swift */; };
+		965334161C39FA1A00F5CF57 /* STCycleLoadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965334151C39FA1A00F5CF57 /* STCycleLoadView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		965333F61C39F9E500F5CF57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 965333D91C39F9E500F5CF57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 965333E01C39F9E500F5CF57;
+			remoteInfo = "STCycleLoadView-SubmitButton";
+		};
+		965334011C39F9E500F5CF57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 965333D91C39F9E500F5CF57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 965333E01C39F9E500F5CF57;
+			remoteInfo = "STCycleLoadView-SubmitButton";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		965333E11C39F9E500F5CF57 /* STCycleLoadView-SubmitButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "STCycleLoadView-SubmitButton.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		965333E41C39F9E500F5CF57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		965333E61C39F9E500F5CF57 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		965333E91C39F9E500F5CF57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		965333EB1C39F9E500F5CF57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		965333EE1C39F9E500F5CF57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		965333F01C39F9E500F5CF57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		965333F51C39F9E500F5CF57 /* STCycleLoadView-SubmitButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "STCycleLoadView-SubmitButtonTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		965333F91C39F9E500F5CF57 /* STCycleLoadView_SubmitButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STCycleLoadView_SubmitButtonTests.swift; sourceTree = "<group>"; };
+		965333FB1C39F9E500F5CF57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		965334001C39F9E500F5CF57 /* STCycleLoadView-SubmitButtonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "STCycleLoadView-SubmitButtonUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		965334041C39F9E500F5CF57 /* STCycleLoadView_SubmitButtonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STCycleLoadView_SubmitButtonUITests.swift; sourceTree = "<group>"; };
+		965334061C39F9E500F5CF57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		965334131C39FA0800F5CF57 /* STConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STConfiguration.swift; sourceTree = "<group>"; };
+		965334151C39FA1A00F5CF57 /* STCycleLoadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STCycleLoadView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		965333DE1C39F9E500F5CF57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		965333F21C39F9E500F5CF57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		965333FD1C39F9E500F5CF57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		965333D81C39F9E500F5CF57 = {
+			isa = PBXGroup;
+			children = (
+				965333E31C39F9E500F5CF57 /* STCycleLoadView-SubmitButton */,
+				965333F81C39F9E500F5CF57 /* STCycleLoadView-SubmitButtonTests */,
+				965334031C39F9E500F5CF57 /* STCycleLoadView-SubmitButtonUITests */,
+				965333E21C39F9E500F5CF57 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		965333E21C39F9E500F5CF57 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				965333E11C39F9E500F5CF57 /* STCycleLoadView-SubmitButton.app */,
+				965333F51C39F9E500F5CF57 /* STCycleLoadView-SubmitButtonTests.xctest */,
+				965334001C39F9E500F5CF57 /* STCycleLoadView-SubmitButtonUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		965333E31C39F9E500F5CF57 /* STCycleLoadView-SubmitButton */ = {
+			isa = PBXGroup;
+			children = (
+				965334121C39F9F800F5CF57 /* STCycleLoadView */,
+				965333E41C39F9E500F5CF57 /* AppDelegate.swift */,
+				965333E61C39F9E500F5CF57 /* ViewController.swift */,
+				965333E81C39F9E500F5CF57 /* Main.storyboard */,
+				965333EB1C39F9E500F5CF57 /* Assets.xcassets */,
+				965333ED1C39F9E500F5CF57 /* LaunchScreen.storyboard */,
+				965333F01C39F9E500F5CF57 /* Info.plist */,
+			);
+			path = "STCycleLoadView-SubmitButton";
+			sourceTree = "<group>";
+		};
+		965333F81C39F9E500F5CF57 /* STCycleLoadView-SubmitButtonTests */ = {
+			isa = PBXGroup;
+			children = (
+				965333F91C39F9E500F5CF57 /* STCycleLoadView_SubmitButtonTests.swift */,
+				965333FB1C39F9E500F5CF57 /* Info.plist */,
+			);
+			path = "STCycleLoadView-SubmitButtonTests";
+			sourceTree = "<group>";
+		};
+		965334031C39F9E500F5CF57 /* STCycleLoadView-SubmitButtonUITests */ = {
+			isa = PBXGroup;
+			children = (
+				965334041C39F9E500F5CF57 /* STCycleLoadView_SubmitButtonUITests.swift */,
+				965334061C39F9E500F5CF57 /* Info.plist */,
+			);
+			path = "STCycleLoadView-SubmitButtonUITests";
+			sourceTree = "<group>";
+		};
+		965334121C39F9F800F5CF57 /* STCycleLoadView */ = {
+			isa = PBXGroup;
+			children = (
+				965334151C39FA1A00F5CF57 /* STCycleLoadView.swift */,
+				965334131C39FA0800F5CF57 /* STConfiguration.swift */,
+			);
+			path = STCycleLoadView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		965333E01C39F9E500F5CF57 /* STCycleLoadView-SubmitButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 965334091C39F9E500F5CF57 /* Build configuration list for PBXNativeTarget "STCycleLoadView-SubmitButton" */;
+			buildPhases = (
+				965333DD1C39F9E500F5CF57 /* Sources */,
+				965333DE1C39F9E500F5CF57 /* Frameworks */,
+				965333DF1C39F9E500F5CF57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "STCycleLoadView-SubmitButton";
+			productName = "STCycleLoadView-SubmitButton";
+			productReference = 965333E11C39F9E500F5CF57 /* STCycleLoadView-SubmitButton.app */;
+			productType = "com.apple.product-type.application";
+		};
+		965333F41C39F9E500F5CF57 /* STCycleLoadView-SubmitButtonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9653340C1C39F9E500F5CF57 /* Build configuration list for PBXNativeTarget "STCycleLoadView-SubmitButtonTests" */;
+			buildPhases = (
+				965333F11C39F9E500F5CF57 /* Sources */,
+				965333F21C39F9E500F5CF57 /* Frameworks */,
+				965333F31C39F9E500F5CF57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				965333F71C39F9E500F5CF57 /* PBXTargetDependency */,
+			);
+			name = "STCycleLoadView-SubmitButtonTests";
+			productName = "STCycleLoadView-SubmitButtonTests";
+			productReference = 965333F51C39F9E500F5CF57 /* STCycleLoadView-SubmitButtonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		965333FF1C39F9E500F5CF57 /* STCycleLoadView-SubmitButtonUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9653340F1C39F9E500F5CF57 /* Build configuration list for PBXNativeTarget "STCycleLoadView-SubmitButtonUITests" */;
+			buildPhases = (
+				965333FC1C39F9E500F5CF57 /* Sources */,
+				965333FD1C39F9E500F5CF57 /* Frameworks */,
+				965333FE1C39F9E500F5CF57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				965334021C39F9E500F5CF57 /* PBXTargetDependency */,
+			);
+			name = "STCycleLoadView-SubmitButtonUITests";
+			productName = "STCycleLoadView-SubmitButtonUITests";
+			productReference = 965334001C39F9E500F5CF57 /* STCycleLoadView-SubmitButtonUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		965333D91C39F9E500F5CF57 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = tangjr;
+				TargetAttributes = {
+					965333E01C39F9E500F5CF57 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					965333F41C39F9E500F5CF57 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 965333E01C39F9E500F5CF57;
+					};
+					965333FF1C39F9E500F5CF57 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 965333E01C39F9E500F5CF57;
+					};
+				};
+			};
+			buildConfigurationList = 965333DC1C39F9E500F5CF57 /* Build configuration list for PBXProject "STCycleLoadView-SubmitButton" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 965333D81C39F9E500F5CF57;
+			productRefGroup = 965333E21C39F9E500F5CF57 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				965333E01C39F9E500F5CF57 /* STCycleLoadView-SubmitButton */,
+				965333F41C39F9E500F5CF57 /* STCycleLoadView-SubmitButtonTests */,
+				965333FF1C39F9E500F5CF57 /* STCycleLoadView-SubmitButtonUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		965333DF1C39F9E500F5CF57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				965333EF1C39F9E500F5CF57 /* LaunchScreen.storyboard in Resources */,
+				965333EC1C39F9E500F5CF57 /* Assets.xcassets in Resources */,
+				965333EA1C39F9E500F5CF57 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		965333F31C39F9E500F5CF57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		965333FE1C39F9E500F5CF57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		965333DD1C39F9E500F5CF57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				965334141C39FA0800F5CF57 /* STConfiguration.swift in Sources */,
+				965333E71C39F9E500F5CF57 /* ViewController.swift in Sources */,
+				965334161C39FA1A00F5CF57 /* STCycleLoadView.swift in Sources */,
+				965333E51C39F9E500F5CF57 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		965333F11C39F9E500F5CF57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				965333FA1C39F9E500F5CF57 /* STCycleLoadView_SubmitButtonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		965333FC1C39F9E500F5CF57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				965334051C39F9E500F5CF57 /* STCycleLoadView_SubmitButtonUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		965333F71C39F9E500F5CF57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 965333E01C39F9E500F5CF57 /* STCycleLoadView-SubmitButton */;
+			targetProxy = 965333F61C39F9E500F5CF57 /* PBXContainerItemProxy */;
+		};
+		965334021C39F9E500F5CF57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 965333E01C39F9E500F5CF57 /* STCycleLoadView-SubmitButton */;
+			targetProxy = 965334011C39F9E500F5CF57 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		965333E81C39F9E500F5CF57 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				965333E91C39F9E500F5CF57 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		965333ED1C39F9E500F5CF57 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				965333EE1C39F9E500F5CF57 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		965334071C39F9E500F5CF57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		965334081C39F9E500F5CF57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9653340A1C39F9E500F5CF57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "STCycleLoadView-SubmitButton/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.saitjr.STCycleLoadView-SubmitButton";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9653340B1C39F9E500F5CF57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "STCycleLoadView-SubmitButton/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.saitjr.STCycleLoadView-SubmitButton";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9653340D1C39F9E500F5CF57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "STCycleLoadView-SubmitButtonTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.saitjr.STCycleLoadView-SubmitButtonTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/STCycleLoadView-SubmitButton.app/STCycleLoadView-SubmitButton";
+			};
+			name = Debug;
+		};
+		9653340E1C39F9E500F5CF57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "STCycleLoadView-SubmitButtonTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.saitjr.STCycleLoadView-SubmitButtonTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/STCycleLoadView-SubmitButton.app/STCycleLoadView-SubmitButton";
+			};
+			name = Release;
+		};
+		965334101C39F9E500F5CF57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "STCycleLoadView-SubmitButtonUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.saitjr.STCycleLoadView-SubmitButtonUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "STCycleLoadView-SubmitButton";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		965334111C39F9E500F5CF57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "STCycleLoadView-SubmitButtonUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.saitjr.STCycleLoadView-SubmitButtonUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "STCycleLoadView-SubmitButton";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		965333DC1C39F9E500F5CF57 /* Build configuration list for PBXProject "STCycleLoadView-SubmitButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				965334071C39F9E500F5CF57 /* Debug */,
+				965334081C39F9E500F5CF57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		965334091C39F9E500F5CF57 /* Build configuration list for PBXNativeTarget "STCycleLoadView-SubmitButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9653340A1C39F9E500F5CF57 /* Debug */,
+				9653340B1C39F9E500F5CF57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9653340C1C39F9E500F5CF57 /* Build configuration list for PBXNativeTarget "STCycleLoadView-SubmitButtonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9653340D1C39F9E500F5CF57 /* Debug */,
+				9653340E1C39F9E500F5CF57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9653340F1C39F9E500F5CF57 /* Build configuration list for PBXNativeTarget "STCycleLoadView-SubmitButtonUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				965334101C39F9E500F5CF57 /* Debug */,
+				965334111C39F9E500F5CF57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 965333D91C39F9E500F5CF57 /* Project object */;
+}
