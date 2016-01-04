@@ -105,6 +105,9 @@ extension STCycleLoadView {
     }
     
     func stopAnimation() {
+        guard isAnimation else {
+            return
+        }
         
         UIView.animateWithDuration(0.2, animations: { () -> Void in
             self.alpha = 0
