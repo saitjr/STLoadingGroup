@@ -13,3 +13,9 @@ A Group of Loading Animations.
 **Designed by** : ZhiHu daily.
 
 ![](./SCREENSHOTS/STCycleLoadView-ZhiHu.gif)
+
+## STCycleLoadView-SubmitButton
+
+Loading animation in submit button.
+
+![](./SCREENSHOTS/STCycleLoadView-SubmitButton.gif)
