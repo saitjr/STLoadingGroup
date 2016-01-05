@@ -118,7 +118,8 @@ extension STSpotLoadView {
             strokeStartAniamtion.toValue = 1
             
             let strokeAnimationGroup = CAAnimationGroup()
-            strokeAnimationGroup.duration = STConfiguration.AnimationDuration - NSTimeInterval(3 - i) * STConfiguration.AnimationDuration * 0.1
+            strokeAnimationGroup.duration = (STConfiguration.AnimationDuration - NSTimeInterval(3 - i) * STConfiguration.AnimationDuration * 0.1) * 0.8
+            strokeAnimationGroup.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
             strokeAnimationGroup.fillMode = "forwards"
             strokeAnimationGroup.removedOnCompletion = false
             strokeAnimationGroup.animations = [strokeStartAniamtion, strokeEndAnimation]
