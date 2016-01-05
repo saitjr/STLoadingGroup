@@ -2,6 +2,12 @@
 
 A Group of Loading Animations.
 
+## STSpotLoadView-Arch
+
+**Designed by** : [John LaPrime](https://dribbble.com/johnlaprime). **Dribbble link** : [click me !](https://dribbble.com/shots/2392622-Loading-Animation)
+
+![](./SCREENSHOTS/STSpotLoadView-Arch.gif)
+
 ## STSpotLoadView-BouncyPreloader
 
 **Designed by** :  [Joash Berkeley](https://dribbble.com/JoashBerkeley). **Dribbble link** : [click me !](https://dribbble.com/shots/2391053-Bouncy-Preloader)
