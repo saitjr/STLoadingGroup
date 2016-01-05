@@ -2,6 +2,12 @@
 
 A Group of Loading Animations.
 
+## STSpotLoadView-Walk
+
+**Designed by** : [John LaPrime](https://dribbble.com/johnlaprime). **Dribbble link** : [click me !](https://dribbble.com/shots/2392622-Loading-Animation)
+
+![](./SCREENSHOTS/STSpotLoadView-Walk.gif)
+
 ## STSpotLoadView-Arch
 
 **Designed by** : [John LaPrime](https://dribbble.com/johnlaprime). **Dribbble link** : [click me !](https://dribbble.com/shots/2392622-Loading-Animation)
