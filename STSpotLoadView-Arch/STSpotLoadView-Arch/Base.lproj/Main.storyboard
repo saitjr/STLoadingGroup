@@ -18,11 +18,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cm8-rE-DBc" customClass="STSpotLoadView" customModule="STSpotLoadView_Arch" customModuleProvider="target">
-                                <rect key="frame" x="60" y="184" width="200" height="200"/>
+                                <rect key="frame" x="100" y="224" width="120" height="120"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="Cul-gH-z2F"/>
-                                    <constraint firstAttribute="width" constant="200" id="xxe-ql-rbj"/>
+                                    <constraint firstAttribute="height" constant="120" id="Cul-gH-z2F"/>
+                                    <constraint firstAttribute="width" constant="120" id="xxe-ql-rbj"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Touch to start" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqs-Qc-oEZ">

@@ -61,14 +61,14 @@ class STSpotLoadView: UIView {
 
 extension STSpotLoadView {
     private func setupUI() {
-        for i in 0 ..< spotCount {
+        for _ in 0 ..< spotCount {
             let spotLayer = CAShapeLayer()
             spotLayer.lineCap = "round"
             spotLayer.lineJoin = "round"
             spotLayer.lineWidth = STConfiguration.LineWidth
             spotLayer.fillColor = UIColor.clearColor().CGColor
             spotLayer.strokeColor = STConfiguration.MainColor.CGColor
-            spotLayer.strokeEnd = 0.005 * CGFloat(i + 1)
+            spotLayer.strokeEnd = 0.000001
             layer.addSublayer(spotLayer)
             spotGroup.append(spotLayer)
             
@@ -84,8 +84,8 @@ extension STSpotLoadView {
             let spotLayer = spotGroup[i]
             let spotWidth = CGRectGetWidth(bounds) * CGFloat((spotCount - i)) * 0.6
             spotLayer.bounds = CGRectMake(0, 0, spotWidth, spotWidth)
-            spotLayer.position = CGPointMake(CGRectGetWidth(bounds), CGRectGetHeight(bounds) / 2.0)
-            spotLayer.path = UIBezierPath(arcCenter: CGPointMake(spotWidth / 2.0, spotWidth / 2.0), radius: spotWidth / 4.0, startAngle: CGFloat(M_PI), endAngle: CGFloat(M_PI * 2), clockwise: true).CGPath
+            spotLayer.position = CGPointMake(CGRectGetWidth(bounds) * 1.1, CGRectGetHeight(bounds) / 2.0)
+            spotLayer.path = UIBezierPath(arcCenter: CGPointMake(spotWidth / 2.0, spotWidth / 2.0), radius: spotWidth * 0.25, startAngle: CGFloat(M_PI), endAngle: CGFloat(M_PI * 2), clockwise: true).CGPath
         }
     }
 }
@@ -102,7 +102,7 @@ extension STSpotLoadView {
             let spotLayer = spotGroup[i]
             
             let transformAnimation = CABasicAnimation(keyPath: "position.x")
-            transformAnimation.fromValue = CGRectGetWidth(bounds)
+            transformAnimation.fromValue = CGRectGetWidth(bounds) * 1.1
             transformAnimation.toValue = CGRectGetWidth(bounds) / 2.0
             transformAnimation.duration = STConfiguration.AnimationDuration / 3.0
             transformAnimation.fillMode = "forwards"
