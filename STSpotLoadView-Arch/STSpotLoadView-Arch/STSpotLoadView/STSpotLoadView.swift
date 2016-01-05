@@ -85,7 +85,7 @@ extension STSpotLoadView {
             let spotWidth = CGRectGetWidth(bounds) * CGFloat((spotCount - i)) * 0.6
             spotLayer.bounds = CGRectMake(0, 0, spotWidth, spotWidth)
             spotLayer.position = CGPointMake(CGRectGetWidth(bounds) * 1.1, CGRectGetHeight(bounds) / 2.0)
-            spotLayer.path = UIBezierPath(arcCenter: CGPointMake(spotWidth / 2.0, spotWidth / 2.0), radius: spotWidth * 0.25, startAngle: CGFloat(M_PI), endAngle: CGFloat(M_PI * 2), clockwise: true).CGPath
+            spotLayer.path = UIBezierPath(arcCenter: CGPointMake(spotWidth / 2.0 - CGRectGetWidth(bounds) * 0.3, spotWidth / 2.0), radius: spotWidth * 0.25, startAngle: CGFloat(M_PI), endAngle: CGFloat(M_PI * 2), clockwise: true).CGPath
         }
     }
 }
@@ -103,8 +103,8 @@ extension STSpotLoadView {
             
             let transformAnimation = CABasicAnimation(keyPath: "position.x")
             transformAnimation.fromValue = CGRectGetWidth(bounds) * 1.1
-            transformAnimation.toValue = CGRectGetWidth(bounds) / 2.0
-            transformAnimation.duration = STConfiguration.AnimationDuration / 3.0
+            transformAnimation.toValue = CGRectGetWidth(bounds) * 0.5
+            transformAnimation.duration = STConfiguration.AnimationDuration
             transformAnimation.fillMode = "forwards"
             transformAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
             transformAnimation.removedOnCompletion = false
@@ -118,8 +118,7 @@ extension STSpotLoadView {
             strokeStartAniamtion.toValue = 1
             
             let strokeAnimationGroup = CAAnimationGroup()
-            strokeAnimationGroup.beginTime = transformAnimation.duration
-            strokeAnimationGroup.duration = STConfiguration.AnimationDuration * 2.0 / 3.0 - NSTimeInterval(3 - i) * STConfiguration.AnimationDuration * 0.1
+            strokeAnimationGroup.duration = STConfiguration.AnimationDuration - NSTimeInterval(3 - i) * STConfiguration.AnimationDuration * 0.1
             strokeAnimationGroup.fillMode = "forwards"
             strokeAnimationGroup.removedOnCompletion = false
             strokeAnimationGroup.animations = [strokeStartAniamtion, strokeEndAnimation]

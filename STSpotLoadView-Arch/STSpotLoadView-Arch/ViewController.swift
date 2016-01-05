@@ -21,7 +21,6 @@ class ViewController: UIViewController {
         spotLoadView.startAnimation()
         
         let popTime = dispatch_time(DISPATCH_TIME_NOW, Int64( Double(NSEC_PER_SEC) * 9))
-        
         dispatch_after(popTime, dispatch_get_main_queue()) {
             self.spotLoadView.stopAnimation()
         }

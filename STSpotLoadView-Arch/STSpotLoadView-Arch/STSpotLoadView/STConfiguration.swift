@@ -33,7 +33,7 @@
 import UIKit
 
 struct STConfiguration {
-    static let AnimationDuration: NSTimeInterval = 2
+    static let AnimationDuration: NSTimeInterval = 1.5
     static let LineWidth: CGFloat = 10
     static let MainColor: UIColor = UIColor.whiteColor()
 }
