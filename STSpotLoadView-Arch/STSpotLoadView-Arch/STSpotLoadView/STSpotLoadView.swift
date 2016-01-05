@@ -38,6 +38,15 @@ class STSpotLoadView: UIView {
     private var spotGroup = [CAShapeLayer]()
     private var shadowGroup = [CALayer]()
     private var isAnimation = false
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupUI()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
 
     override func awakeFromNib() {
         super.awakeFromNib()
