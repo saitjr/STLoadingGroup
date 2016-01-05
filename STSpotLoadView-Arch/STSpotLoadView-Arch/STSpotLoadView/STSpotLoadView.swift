@@ -36,6 +36,7 @@ class STSpotLoadView: UIView {
     
     private let spotCount = 3
     private var spotGroup = [CAShapeLayer]()
+    private var shadowGroup = [CALayer]()
     private var isAnimation = false
 
     override func awakeFromNib() {
@@ -61,6 +62,11 @@ extension STSpotLoadView {
             spotLayer.strokeEnd = 0.005 * CGFloat(i + 1)
             layer.addSublayer(spotLayer)
             spotGroup.append(spotLayer)
+            
+            spotLayer.shadowColor = UIColor.blackColor().CGColor
+            spotLayer.shadowOffset = CGSizeMake(10, 10)
+            spotLayer.shadowOpacity = 0.2
+            spotLayer.shadowRadius = 10
         }
     }
     
