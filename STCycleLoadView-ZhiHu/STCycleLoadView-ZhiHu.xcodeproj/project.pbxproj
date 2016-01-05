@@ -207,6 +207,7 @@
 				TargetAttributes = {
 					965333A11C397A0E00F5CF57 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = C5AXJ4MJB2;
 					};
 					965333B51C397A0E00F5CF57 = {
 						CreatedOnToolsVersion = 7.2;
@@ -415,10 +416,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Shenzhen Heaton Technology Co., Ltd.";
 				INFOPLIST_FILE = "STCycleLoadView-ZhiHu/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.saitjr.STCycleLoadView-ZhiHu";
+				PRODUCT_BUNDLE_IDENTIFIER = com.saitjr.zhihu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "13651e53-131f-4bc7-ae78-75b613ba3b06";
 			};
 			name = Debug;
 		};
@@ -426,10 +430,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Shenzhen Heaton Technology Co., Ltd.";
 				INFOPLIST_FILE = "STCycleLoadView-ZhiHu/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.saitjr.STCycleLoadView-ZhiHu";
+				PRODUCT_BUNDLE_IDENTIFIER = com.saitjr.zhihu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "13651e53-131f-4bc7-ae78-75b613ba3b06";
 			};
 			name = Release;
 		};
@@ -500,6 +507,7 @@
 				965333CC1C397A0E00F5CF57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		965333CD1C397A0E00F5CF57 /* Build configuration list for PBXNativeTarget "STCycleLoadView-ZhiHuTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +516,7 @@
 				965333CF1C397A0E00F5CF57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		965333D01C397A0E00F5CF57 /* Build configuration list for PBXNativeTarget "STCycleLoadView-ZhiHuUITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +525,7 @@
 				965333D21C397A0E00F5CF57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
