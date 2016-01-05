@@ -4,7 +4,7 @@ A Group of Loading Animations.
 
 ## STSpotLoadView-Walk
 
-**Designed by** : [John LaPrime](https://dribbble.com/sandeepvirk87). **Dribbble link** : [click me !](https://dribbble.com/shots/2341109-Loading)
+**Designed by** : [sandeep virk](https://dribbble.com/sandeepvirk87). **Dribbble link** : [click me !](https://dribbble.com/shots/2341109-Loading)
 
 ![](./SCREENSHOTS/STSpotLoadView-Walk.gif)
 
