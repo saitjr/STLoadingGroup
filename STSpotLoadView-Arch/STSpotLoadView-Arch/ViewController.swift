@@ -20,10 +20,10 @@ class ViewController: UIViewController {
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         spotLoadView.startAnimation()
         
-//        let popTime = dispatch_time(DISPATCH_TIME_NOW, Int64( Double(NSEC_PER_SEC) * 9))
-//        
-//        dispatch_after(popTime, dispatch_get_main_queue()) {
-//            self.spotLoadView.stopAnimation()
-//        }
+        let popTime = dispatch_time(DISPATCH_TIME_NOW, Int64( Double(NSEC_PER_SEC) * 9))
+        
+        dispatch_after(popTime, dispatch_get_main_queue()) {
+            self.spotLoadView.stopAnimation()
+        }
     }
 }
