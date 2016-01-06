@@ -422,7 +422,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.saitjr.zhihu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "13651e53-131f-4bc7-ae78-75b613ba3b06";
+				PROVISIONING_PROFILE = "a75c1882-b238-4c53-a1db-c189da0f5a50";
 			};
 			name = Debug;
 		};
@@ -436,7 +436,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.saitjr.zhihu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "13651e53-131f-4bc7-ae78-75b613ba3b06";
+				PROVISIONING_PROFILE = "a75c1882-b238-4c53-a1db-c189da0f5a50";
 			};
 			name = Release;
 		};

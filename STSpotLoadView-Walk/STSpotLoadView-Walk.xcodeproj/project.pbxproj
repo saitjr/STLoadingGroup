@@ -415,9 +415,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Shenzhen Heaton Technology Co., Ltd.";
 				INFOPLIST_FILE = "STSpotLoadView-Walk/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.saitjr.STSpotLoadView-Walk";
+				PRODUCT_BUNDLE_IDENTIFIER = com.saitjr.walk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -426,9 +427,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Shenzhen Heaton Technology Co., Ltd.";
 				INFOPLIST_FILE = "STSpotLoadView-Walk/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.saitjr.STSpotLoadView-Walk";
+				PRODUCT_BUNDLE_IDENTIFIER = com.saitjr.walk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -500,6 +502,7 @@
 				96AA2A321C3B758E00268631 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		96AA2A331C3B758E00268631 /* Build configuration list for PBXNativeTarget "STSpotLoadView-WalkTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +511,7 @@
 				96AA2A351C3B758E00268631 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		96AA2A361C3B758E00268631 /* Build configuration list for PBXNativeTarget "STSpotLoadView-WalkUITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +520,7 @@
 				96AA2A381C3B758E00268631 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
