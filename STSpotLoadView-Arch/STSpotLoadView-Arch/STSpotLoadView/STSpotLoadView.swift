@@ -140,6 +140,9 @@ extension STSpotLoadView {
             self.alpha = 0
             }) { (finish) -> Void in
                 self.isAnimation = false
+                for spotLayer in self.spotGroup {
+                    spotLayer.removeAllAnimations()
+                }
         }
     }
 }
