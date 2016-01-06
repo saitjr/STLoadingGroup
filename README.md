@@ -2,6 +2,12 @@
 
 A Group of Loading Animations.
 
+## STSpotLoadView-Glasses
+
+**Designed by** : [bingbing](https://dribbble.com/bingbing). **Dribbble link** : [click me !](https://dribbble.com/shots/2124921-togic-loading)
+
+![](./SCREENSHOTS/STSpotLoadView-Glasses.gif)
+
 ## STSpotLoadView-Walk
 
 **Designed by** : [sandeep virk](https://dribbble.com/sandeepvirk87). **Dribbble link** : [click me !](https://dribbble.com/shots/2341109-Loading)

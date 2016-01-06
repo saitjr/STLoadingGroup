@@ -34,6 +34,6 @@ import UIKit
 
 struct STConfiguration {
     static let SpotDiameter: CGFloat = 10
-    static let AnimationDuration: NSTimeInterval = 1.5
+    static let AnimationDuration: NSTimeInterval = 1
     static let MainColor: UIColor = UIColor.whiteColor()
 }
