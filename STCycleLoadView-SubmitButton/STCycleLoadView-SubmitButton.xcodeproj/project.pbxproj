@@ -16,6 +16,7 @@
 		965334051C39F9E500F5CF57 /* STCycleLoadView_SubmitButtonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965334041C39F9E500F5CF57 /* STCycleLoadView_SubmitButtonUITests.swift */; };
 		965334141C39FA0800F5CF57 /* STConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965334131C39FA0800F5CF57 /* STConfiguration.swift */; };
 		965334161C39FA1A00F5CF57 /* STCycleLoadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965334151C39FA1A00F5CF57 /* STCycleLoadView.swift */; };
+		9689C3DE1C47365A00C13E67 /* STAnimationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9689C3DD1C47365A00C13E67 /* STAnimationProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		965334061C39F9E500F5CF57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		965334131C39FA0800F5CF57 /* STConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STConfiguration.swift; sourceTree = "<group>"; };
 		965334151C39FA1A00F5CF57 /* STCycleLoadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STCycleLoadView.swift; sourceTree = "<group>"; };
+		9689C3DD1C47365A00C13E67 /* STAnimationProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STAnimationProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 		965334121C39F9F800F5CF57 /* STCycleLoadView */ = {
 			isa = PBXGroup;
 			children = (
+				9689C3DD1C47365A00C13E67 /* STAnimationProtocol.swift */,
 				965334151C39FA1A00F5CF57 /* STCycleLoadView.swift */,
 				965334131C39FA0800F5CF57 /* STConfiguration.swift */,
 			);
@@ -272,6 +275,7 @@
 			files = (
 				965334141C39FA0800F5CF57 /* STConfiguration.swift in Sources */,
 				965333E71C39F9E500F5CF57 /* ViewController.swift in Sources */,
+				9689C3DE1C47365A00C13E67 /* STAnimationProtocol.swift in Sources */,
 				965334161C39FA1A00F5CF57 /* STCycleLoadView.swift in Sources */,
 				965333E51C39F9E500F5CF57 /* AppDelegate.swift in Sources */,
 			);

@@ -76,7 +76,7 @@ extension STCycleLoadView {
     }
 }
 
-extension STCycleLoadView {
+extension STCycleLoadView: STAnimationProtocol {
     func startAnimation() {
         guard !isAnimation else {
             return
