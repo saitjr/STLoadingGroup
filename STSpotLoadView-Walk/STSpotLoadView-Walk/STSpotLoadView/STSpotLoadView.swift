@@ -78,7 +78,7 @@ extension STSpotLoadView {
     }
 }
 
-extension STSpotLoadView {
+extension STSpotLoadView: STAnimationProtocol {
     func startAnimation() {
         guard !isAnimation else {
             return

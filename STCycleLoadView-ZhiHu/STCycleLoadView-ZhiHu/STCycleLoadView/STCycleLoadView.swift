@@ -66,6 +66,8 @@ extension STCycleLoadView {
         cycleLayer.strokeColor = STConfiguration.MainColor.CGColor
         cycleLayer.strokeEnd = 0
         layer.addSublayer(cycleLayer)
+        
+        let aLayer = CALayer()
     }
     
     private func updateUI() {
@@ -84,11 +86,11 @@ extension STCycleLoadView {
 
         let strokeStartAnimation = CABasicAnimation(keyPath: "strokeStart")
         strokeStartAnimation.fromValue = -1
-        strokeStartAnimation.toValue = 1.2
+        strokeStartAnimation.toValue = 1.0
         
         let strokeEndAnimation = CABasicAnimation(keyPath: "strokeEnd")
         strokeEndAnimation.fromValue = 0
-        strokeEndAnimation.toValue = 1.2
+        strokeEndAnimation.toValue = 1.0
         
         let animationGroup = CAAnimationGroup()
         animationGroup.duration = STConfiguration.AnimationDuration

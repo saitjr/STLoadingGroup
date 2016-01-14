@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9689C3DC1C46660200C13E67 /* STAnimationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9689C3DB1C46660200C13E67 /* STAnimationProtocol.swift */; };
 		96AA2A0C1C3B758E00268631 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AA2A0B1C3B758E00268631 /* AppDelegate.swift */; };
 		96AA2A0E1C3B758E00268631 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AA2A0D1C3B758E00268631 /* ViewController.swift */; };
 		96AA2A111C3B758E00268631 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96AA2A0F1C3B758E00268631 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9689C3DB1C46660200C13E67 /* STAnimationProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STAnimationProtocol.swift; sourceTree = "<group>"; };
 		96AA2A081C3B758E00268631 /* STSpotLoadView-Walk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "STSpotLoadView-Walk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96AA2A0B1C3B758E00268631 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96AA2A0D1C3B758E00268631 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				96AA2A3A1C3B8EAB00268631 /* STSpotLoadView.swift */,
+				9689C3DB1C46660200C13E67 /* STAnimationProtocol.swift */,
 				96AA2A3C1C3B8EB500268631 /* STConfiguration.swift */,
 			);
 			path = STSpotLoadView;
@@ -272,6 +275,7 @@
 			files = (
 				96AA2A3B1C3B8EAB00268631 /* STSpotLoadView.swift in Sources */,
 				96AA2A0E1C3B758E00268631 /* ViewController.swift in Sources */,
+				9689C3DC1C46660200C13E67 /* STAnimationProtocol.swift in Sources */,
 				96AA2A0C1C3B758E00268631 /* AppDelegate.swift in Sources */,
 				96AA2A3D1C3B8EB500268631 /* STConfiguration.swift in Sources */,
 			);
