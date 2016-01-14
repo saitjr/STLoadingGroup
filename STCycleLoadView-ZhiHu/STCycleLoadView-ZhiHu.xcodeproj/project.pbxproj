@@ -16,6 +16,7 @@
 		965333C61C397A0E00F5CF57 /* STCycleLoadView_ZhiHuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965333C51C397A0E00F5CF57 /* STCycleLoadView_ZhiHuUITests.swift */; };
 		965333D51C397A2A00F5CF57 /* STCycleLoadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965333D41C397A2A00F5CF57 /* STCycleLoadView.swift */; };
 		965333D71C397BCF00F5CF57 /* STConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965333D61C397BCF00F5CF57 /* STConfiguration.swift */; };
+		9689C3E01C4736A900C13E67 /* STAnimationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9689C3DF1C4736A900C13E67 /* STAnimationProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		965333C71C397A0E00F5CF57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		965333D41C397A2A00F5CF57 /* STCycleLoadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STCycleLoadView.swift; sourceTree = "<group>"; };
 		965333D61C397BCF00F5CF57 /* STConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STConfiguration.swift; sourceTree = "<group>"; };
+		9689C3DF1C4736A900C13E67 /* STAnimationProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STAnimationProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			children = (
 				965333D41C397A2A00F5CF57 /* STCycleLoadView.swift */,
 				965333D61C397BCF00F5CF57 /* STConfiguration.swift */,
+				9689C3DF1C4736A900C13E67 /* STAnimationProtocol.swift */,
 			);
 			path = STCycleLoadView;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 			files = (
 				965333A81C397A0E00F5CF57 /* ViewController.swift in Sources */,
 				965333A61C397A0E00F5CF57 /* AppDelegate.swift in Sources */,
+				9689C3E01C4736A900C13E67 /* STAnimationProtocol.swift in Sources */,
 				965333D51C397A2A00F5CF57 /* STCycleLoadView.swift in Sources */,
 				965333D71C397BCF00F5CF57 /* STConfiguration.swift in Sources */,
 			);

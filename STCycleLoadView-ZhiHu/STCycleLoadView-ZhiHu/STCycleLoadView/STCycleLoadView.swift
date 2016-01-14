@@ -66,8 +66,6 @@ extension STCycleLoadView {
         cycleLayer.strokeColor = STConfiguration.MainColor.CGColor
         cycleLayer.strokeEnd = 0
         layer.addSublayer(cycleLayer)
-        
-        let aLayer = CALayer()
     }
     
     private func updateUI() {
@@ -76,7 +74,7 @@ extension STCycleLoadView {
     }
 }
 
-extension STCycleLoadView {
+extension STCycleLoadView: STAnimationProtocol {
     func startAnimation() {
         guard !isAnimation else {
             return

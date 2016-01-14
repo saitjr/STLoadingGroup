@@ -16,6 +16,7 @@
 		96719C421C3AB90A00F994D6 /* STSpotLoadView_ArchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96719C411C3AB90A00F994D6 /* STSpotLoadView_ArchUITests.swift */; };
 		96719C521C3AB93A00F994D6 /* STConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96719C501C3AB93A00F994D6 /* STConfiguration.swift */; };
 		96719C531C3AB93A00F994D6 /* STSpotLoadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96719C511C3AB93A00F994D6 /* STSpotLoadView.swift */; };
+		9689C3E21C47375800C13E67 /* STAnimationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9689C3E11C47375800C13E67 /* STAnimationProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		96719C431C3AB90A00F994D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96719C501C3AB93A00F994D6 /* STConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STConfiguration.swift; sourceTree = "<group>"; };
 		96719C511C3AB93A00F994D6 /* STSpotLoadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STSpotLoadView.swift; sourceTree = "<group>"; };
+		9689C3E11C47375800C13E67 /* STAnimationProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STAnimationProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			children = (
 				96719C511C3AB93A00F994D6 /* STSpotLoadView.swift */,
 				96719C501C3AB93A00F994D6 /* STConfiguration.swift */,
+				9689C3E11C47375800C13E67 /* STAnimationProtocol.swift */,
 			);
 			path = STSpotLoadView;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 			files = (
 				96719C521C3AB93A00F994D6 /* STConfiguration.swift in Sources */,
 				96719C241C3AB90900F994D6 /* ViewController.swift in Sources */,
+				9689C3E21C47375800C13E67 /* STAnimationProtocol.swift in Sources */,
 				96719C221C3AB90900F994D6 /* AppDelegate.swift in Sources */,
 				96719C531C3AB93A00F994D6 /* STSpotLoadView.swift in Sources */,
 			);
