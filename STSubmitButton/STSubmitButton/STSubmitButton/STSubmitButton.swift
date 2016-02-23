@@ -155,6 +155,7 @@ extension STSubmitButton {
         strokeEndAnimation.duration = STConfiguration.AnimationDuration * 3.0 / 4.0
         strokeEndAnimation.delegate = self
         loadingLayer.addAnimation(strokeEndAnimation, forKey: "strokeEndAnimation")
+        isAnimating = false
     }
 }
 
