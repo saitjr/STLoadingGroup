@@ -59,8 +59,8 @@ class STCycleLoadView: UIView {
 
 extension STCycleLoadView {
     private func setupUI() {
-        cycleLayer.lineCap = "round"
-        cycleLayer.lineJoin = "round"
+        cycleLayer.lineCap = kCALineCapRound
+        cycleLayer.lineJoin = kCALineJoinRound
         cycleLayer.lineWidth = STConfiguration.LineWidth
         cycleLayer.fillColor = UIColor.clearColor().CGColor
         cycleLayer.strokeColor = STConfiguration.MainColor.CGColor
@@ -85,11 +85,11 @@ extension STCycleLoadView: STAnimationProtocol {
         let strokeStartAnimation = CABasicAnimation(keyPath: "strokeStart")
         strokeStartAnimation.fromValue = -1
         strokeStartAnimation.toValue = 1.0
-        
+
         let strokeEndAnimation = CABasicAnimation(keyPath: "strokeEnd")
         strokeEndAnimation.fromValue = 0
         strokeEndAnimation.toValue = 1.0
-        
+
         let animationGroup = CAAnimationGroup()
         animationGroup.duration = STConfiguration.AnimationDuration
         animationGroup.repeatCount = Float.infinity

@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:STCycleLoadView-SubmitButton"
+      name = "STCycleLoadView-SubmitButton">
+      <Group
+         location = "group:STCycleLoadView-SubmitButton"
+         name = "STCycleLoadView-SubmitButton">
+         <FileRef
+            location = "group:AppDelegate.swift">
+         </FileRef>
+         <Group
+            location = "group:Assets.xcassets"
+            name = "Assets.xcassets">
+            <Group
+               location = "group:AppIcon.appiconset"
+               name = "AppIcon.appiconset">
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-60@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-60@3x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-72.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-72@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-76.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-76@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-83.5@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Small-50.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Small-50@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Small.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Small@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Small@3x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Spotlight-40.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Spotlight-40@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Spotlight-40@3x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon@2x.png">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Base.lproj"
+            name = "Base.lproj">
+            <FileRef
+               location = "group:LaunchScreen.storyboard">
+            </FileRef>
+            <FileRef
+               location = "group:Main.storyboard">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+         <Group
+            location = "group:STCycleLoadView"
+            name = "STCycleLoadView">
+            <FileRef
+               location = "group:STAnimationProtocol.swift">
+            </FileRef>
+            <FileRef
+               location = "group:STConfiguration.swift">
+            </FileRef>
+            <FileRef
+               location = "group:STCycleLoadView.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:ViewController.swift">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:STCycleLoadView-SubmitButton.xcodeproj">
+      </FileRef>
+      <Group
+         location = "group:STCycleLoadView-SubmitButtonTests"
+         name = "STCycleLoadView-SubmitButtonTests">
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+         <FileRef
+            location = "group:STCycleLoadView_SubmitButtonTests.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:STCycleLoadView-SubmitButtonUITests"
+         name = "STCycleLoadView-SubmitButtonUITests">
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+         <FileRef
+            location = "group:STCycleLoadView_SubmitButtonUITests.swift">
+         </FileRef>
+      </Group>
+   </Group>
+   <Group
+      location = "group:STCycleLoadView-ZhiHu"
+      name = "STCycleLoadView-ZhiHu">
+      <Group
+         location = "group:STCycleLoadView-ZhiHu"
+         name = "STCycleLoadView-ZhiHu">
+         <FileRef
+            location = "group:AppDelegate.swift">
+         </FileRef>
+         <Group
+            location = "group:Assets.xcassets"
+            name = "Assets.xcassets">
+            <Group
+               location = "group:AppIcon.appiconset"
+               name = "AppIcon.appiconset">
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-60@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-60@3x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-72.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-72@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-76.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-76@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-83.5@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Small-50.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Small-50@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Small.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Small@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Small@3x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Spotlight-40.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Spotlight-40@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Spotlight-40@3x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon@2x.png">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Base.lproj"
+            name = "Base.lproj">
+            <FileRef
+               location = "group:LaunchScreen.storyboard">
+            </FileRef>
+            <FileRef
+               location = "group:Main.storyboard">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+         <Group
+            location = "group:STCycleLoadView"
+            name = "STCycleLoadView">
+            <FileRef
+               location = "group:STAnimationProtocol.swift">
+            </FileRef>
+            <FileRef
+               location = "group:STConfiguration.swift">
+            </FileRef>
+            <FileRef
+               location = "group:STCycleLoadView.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:ViewController.swift">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:STCycleLoadView-ZhiHu.xcodeproj">
+      </FileRef>
+      <Group
+         location = "group:STCycleLoadView-ZhiHuTests"
+         name = "STCycleLoadView-ZhiHuTests">
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+         <FileRef
+            location = "group:STCycleLoadView_ZhiHuTests.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:STCycleLoadView-ZhiHuUITests"
+         name = "STCycleLoadView-ZhiHuUITests">
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+         <FileRef
+            location = "group:STCycleLoadView_ZhiHuUITests.swift">
+         </FileRef>
+      </Group>
+   </Group>
+   <Group
+      location = "group:STSpotLoadView-Arch"
+      name = "STSpotLoadView-Arch">
+      <Group
+         location = "group:STSpotLoadView-Arch"
+         name = "STSpotLoadView-Arch">
+         <FileRef
+            location = "group:AppDelegate.swift">
+         </FileRef>
+         <Group
+            location = "group:Assets.xcassets"
+            name = "Assets.xcassets">
+            <Group
+               location = "group:AppIcon.appiconset"
+               name = "AppIcon.appiconset">
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-60@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-60@3x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-72.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-72@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-76.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-76@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-83.5@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Small-50.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Small-50@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Small.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Small@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Small@3x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Spotlight-40.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Spotlight-40@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Spotlight-40@3x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon@2x.png">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Base.lproj"
+            name = "Base.lproj">
+            <FileRef
+               location = "group:LaunchScreen.storyboard">
+            </FileRef>
+            <FileRef
+               location = "group:Main.storyboard">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+         <Group
+            location = "group:STSpotLoadView"
+            name = "STSpotLoadView">
+            <FileRef
+               location = "group:STAnimationProtocol.swift">
+            </FileRef>
+            <FileRef
+               location = "group:STConfiguration.swift">
+            </FileRef>
+            <FileRef
+               location = "group:STSpotLoadView.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:ViewController.swift">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:STSpotLoadView-Arch.xcodeproj">
+      </FileRef>
+      <Group
+         location = "group:STSpotLoadView-ArchTests"
+         name = "STSpotLoadView-ArchTests">
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+         <FileRef
+            location = "group:STSpotLoadView_ArchTests.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:STSpotLoadView-ArchUITests"
+         name = "STSpotLoadView-ArchUITests">
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+         <FileRef
+            location = "group:STSpotLoadView_ArchUITests.swift">
+         </FileRef>
+      </Group>
+   </Group>
+   <Group
+      location = "group:STSpotLoadView-BouncyPreloader"
+      name = "STSpotLoadView-BouncyPreloader">
+      <Group
+         location = "group:STSpotLoadView-BouncyPreloader"
+         name = "STSpotLoadView-BouncyPreloader">
+         <FileRef
+            location = "group:AppDelegate.swift">
+         </FileRef>
+         <Group
+            location = "group:Assets.xcassets"
+            name = "Assets.xcassets">
+            <Group
+               location = "group:AppIcon.appiconset"
+               name = "AppIcon.appiconset">
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-60@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-60@3x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-76.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-76@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-83.5@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Small.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Small@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Small@3x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Spotlight-40.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Spotlight-40@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Spotlight-40@3x.png">
+               </FileRef>
+            </Group>
+         </Group>
+         <Group
+            location = "group:Base.lproj"
+            name = "Base.lproj">
+            <FileRef
+               location = "group:LaunchScreen.storyboard">
+            </FileRef>
+            <FileRef
+               location = "group:Main.storyboard">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+         <Group
+            location = "group:STSpotLoadView"
+            name = "STSpotLoadView">
+            <FileRef
+               location = "group:STAnimationProtocol.swift">
+            </FileRef>
+            <FileRef
+               location = "group:STConfiguration.swift">
+            </FileRef>
+            <FileRef
+               location = "group:STSpotLoadView.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:ViewController.swift">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:STSpotLoadView-BouncyPreloader.xcodeproj">
+      </FileRef>
+      <Group
+         location = "group:STSpotLoadView-BouncyPreloaderTests"
+         name = "STSpotLoadView-BouncyPreloaderTests">
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+         <FileRef
+            location = "group:STSpotLoadView_BouncyPreloaderTests.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:STSpotLoadView-BouncyPreloaderUITests"
+         name = "STSpotLoadView-BouncyPreloaderUITests">
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+         <FileRef
+            location = "group:STSpotLoadView_BouncyPreloaderUITests.swift">
+         </FileRef>
+      </Group>
+   </Group>
+   <Group
+      location = "group:STSpotLoadView-Glasses"
+      name = "STSpotLoadView-Glasses">
+      <Group
+         location = "group:STSpotLoadView-Glasses"
+         name = "STSpotLoadView-Glasses">
+         <FileRef
+            location = "group:AppDelegate.swift">
+         </FileRef>
+         <Group
+            location = "group:Assets.xcassets"
+            name = "Assets.xcassets">
+            <Group
+               location = "group:AppIcon.appiconset"
+               name = "AppIcon.appiconset">
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-60@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-60@3x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-72.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-72@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-76.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-76@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-83.5@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Small-50.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Small-50@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Small.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Small@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Small@3x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Spotlight-40.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Spotlight-40@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Spotlight-40@3x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon@2x.png">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Base.lproj"
+            name = "Base.lproj">
+            <FileRef
+               location = "group:LaunchScreen.storyboard">
+            </FileRef>
+            <FileRef
+               location = "group:Main.storyboard">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+         <Group
+            location = "group:STSpotLoadView"
+            name = "STSpotLoadView">
+            <FileRef
+               location = "group:STAnimationProtocol.swift">
+            </FileRef>
+            <FileRef
+               location = "group:STConfiguration.swift">
+            </FileRef>
+            <FileRef
+               location = "group:STSpotLoadView.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:ViewController.swift">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:STSpotLoadView-Glasses.xcodeproj">
+      </FileRef>
+      <Group
+         location = "group:STSpotLoadView-GlassesTests"
+         name = "STSpotLoadView-GlassesTests">
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+         <FileRef
+            location = "group:STSpotLoadView_GlassesTests.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:STSpotLoadView-GlassesUITests"
+         name = "STSpotLoadView-GlassesUITests">
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+         <FileRef
+            location = "group:STSpotLoadView_GlassesUITests.swift">
+         </FileRef>
+      </Group>
+   </Group>
+   <Group
+      location = "group:STSpotLoadView-Walk"
+      name = "STSpotLoadView-Walk">
+      <Group
+         location = "group:STSpotLoadView-Walk"
+         name = "STSpotLoadView-Walk">
+         <FileRef
+            location = "group:AppDelegate.swift">
+         </FileRef>
+         <Group
+            location = "group:Assets.xcassets"
+            name = "Assets.xcassets">
+            <Group
+               location = "group:AppIcon.appiconset"
+               name = "AppIcon.appiconset">
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-60@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-60@3x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-76.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-76@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-83.5@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Small.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Small@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Small@3x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Spotlight-40.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Spotlight-40@2x.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-Spotlight-40@3x.png">
+               </FileRef>
+            </Group>
+         </Group>
+         <Group
+            location = "group:Base.lproj"
+            name = "Base.lproj">
+            <FileRef
+               location = "group:LaunchScreen.storyboard">
+            </FileRef>
+            <FileRef
+               location = "group:Main.storyboard">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+         <Group
+            location = "group:STSpotLoadView"
+            name = "STSpotLoadView">
+            <FileRef
+               location = "group:STAnimationProtocol.swift">
+            </FileRef>
+            <FileRef
+               location = "group:STConfiguration.swift">
+            </FileRef>
+            <FileRef
+               location = "group:STSpotLoadView.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:ViewController.swift">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:STSpotLoadView-Walk.xcodeproj">
+      </FileRef>
+      <Group
+         location = "group:STSpotLoadView-WalkTests"
+         name = "STSpotLoadView-WalkTests">
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+         <FileRef
+            location = "group:STSpotLoadView_WalkTests.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:STSpotLoadView-WalkUITests"
+         name = "STSpotLoadView-WalkUITests">
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+         <FileRef
+            location = "group:STSpotLoadView_WalkUITests.swift">
+         </FileRef>
+      </Group>
+   </Group>
+</Workspace>
