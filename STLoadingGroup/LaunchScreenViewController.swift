@@ -10,8 +10,8 @@ import UIKit
 
 class LaunchScreenViewController: UIViewController {
     
-    typealias EmptyBlock = ()->()
-    public var disappearCallback: EmptyBlock?
+//    typealias EmptyBlock = ()->()
+//    public var disappearCallback: EmptyBlock?
     
     fileprivate var labels: [UILabel] = []
 
@@ -95,6 +95,14 @@ extension LaunchScreenViewController {
                 label.transform = CGAffineTransform.identity
                 label.alpha = 1
             }, completion: { _ in
+                if i == labels.count - 1 {
+                    UIView.animate(withDuration: 0.5, delay: 0.7, options: .curveEaseInOut, animations: {
+                        self.view.alpha = 0
+                    }, completion: { _ in
+                        self.view.removeFromSuperview()
+                        self.removeFromParentViewController()
+                    })
+                }
             })
         }
     }
