@@ -27,13 +27,6 @@ class LaunchScreenViewController: UIViewController {
         labels = generateLabels(text: "Loading...")
         layoutLabels(labels: labels)
     }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        for label in labels {
-            label.alpha = 0
-        }
-        animteLabels(labels: labels)
-    }
 }
 
 extension LaunchScreenViewController {

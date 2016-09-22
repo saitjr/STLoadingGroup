@@ -2,6 +2,8 @@
 
 A Group of Loading Animations.
 
+![](./resources/loading.gif)
+
 ## .glasses
 
 **Designed by** : [bingbing](https://dribbble.com/bingbing). **Dribbble link** : [click me !](https://dribbble.com/shots/2124921-togic-loading)
