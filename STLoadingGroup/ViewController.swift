@@ -50,6 +50,10 @@ class ViewController: UIViewController {
         setupData()
         setupUI()
     }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 }
 
 extension ViewController {
