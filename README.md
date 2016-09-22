@@ -2,41 +2,29 @@
 
 A Group of Loading Animations.
 
-## STSpotLoadView-Glasses
+## .glasses
 
 **Designed by** : [bingbing](https://dribbble.com/bingbing). **Dribbble link** : [click me !](https://dribbble.com/shots/2124921-togic-loading)
 
-![](./SCREENSHOTS/STSpotLoadView-Glasses.gif)
-
-## STSpotLoadView-Walk
+## .walk
 
 **Designed by** : [sandeep virk](https://dribbble.com/sandeepvirk87). **Dribbble link** : [click me !](https://dribbble.com/shots/2341109-Loading)
 
-![](./SCREENSHOTS/STSpotLoadView-Walk.gif)
-
-## STSpotLoadView-Arch
+## .arch
 
 **Designed by** : [John LaPrime](https://dribbble.com/johnlaprime). **Dribbble link** : [click me !](https://dribbble.com/shots/2392622-Loading-Animation)
 
-![](./SCREENSHOTS/STSpotLoadView-Arch.gif)
-
-## STSpotLoadView-BouncyPreloader
+## .bouncyPreloader
 
 **Designed by** :  [Joash Berkeley](https://dribbble.com/JoashBerkeley). **Dribbble link** : [click me !](https://dribbble.com/shots/2391053-Bouncy-Preloader)
 
-![](./SCREENSHOTS/STSpotLoadView-BouncyPreloader.gif)
-
-## STCycleLoadView-SubmitButton
+## .submit
 
 Loading animation in submit button.
 
-![](./SCREENSHOTS/STCycleLoadView-SubmitButton.gif)
-
-## STCycleLoadView-ZhiHu
+## .zhiHu
 
 **Designed by** : ZhiHu daily.
-
-![](./SCREENSHOTS/STCycleLoadView-ZhiHu.gif)
 
 ## MIT LICENSE
 
