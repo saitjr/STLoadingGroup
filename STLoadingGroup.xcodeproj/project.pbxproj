@@ -13,6 +13,8 @@
 		0971339B1D937951007D710C /* STSubmitLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097133951D937951007D710C /* STSubmitLoading.swift */; };
 		0971339C1D937951007D710C /* STWalkLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097133961D937951007D710C /* STWalkLoading.swift */; };
 		0971339D1D937951007D710C /* STZhiHuLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097133971D937951007D710C /* STZhiHuLoading.swift */; };
+		0971339F1D93CC19007D710C /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971339E1D93CC19007D710C /* LaunchScreenViewController.swift */; };
+		097133A31D93D74F007D710C /* Arciform.otf in Resources */ = {isa = PBXBuildFile; fileRef = 097133A21D93D74F007D710C /* Arciform.otf */; };
 		097AC8021D87E3900025DE12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097AC8011D87E3900025DE12 /* AppDelegate.swift */; };
 		097AC8041D87E3900025DE12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097AC8031D87E3900025DE12 /* ViewController.swift */; };
 		097AC8071D87E3900025DE12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 097AC8051D87E3900025DE12 /* Main.storyboard */; };
@@ -31,6 +33,8 @@
 		097133951D937951007D710C /* STSubmitLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STSubmitLoading.swift; sourceTree = "<group>"; };
 		097133961D937951007D710C /* STWalkLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STWalkLoading.swift; sourceTree = "<group>"; };
 		097133971D937951007D710C /* STZhiHuLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STZhiHuLoading.swift; sourceTree = "<group>"; };
+		0971339E1D93CC19007D710C /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
+		097133A21D93D74F007D710C /* Arciform.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arciform.otf; sourceTree = "<group>"; };
 		097AC7FE1D87E3900025DE12 /* STLoadingGroup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STLoadingGroup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		097AC8011D87E3900025DE12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		097AC8031D87E3900025DE12 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +72,18 @@
 			path = Loading;
 			sourceTree = "<group>";
 		};
+		097133A11D93D713007D710C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				097133A21D93D74F007D710C /* Arciform.otf */,
+				097AC8051D87E3900025DE12 /* Main.storyboard */,
+				097AC8081D87E3900025DE12 /* Assets.xcassets */,
+				097AC80A1D87E3900025DE12 /* LaunchScreen.storyboard */,
+				097AC80D1D87E3900025DE12 /* Info.plist */,
+			);
+			name = "Support Files";
+			sourceTree = "<group>";
+		};
 		097AC7F51D87E3900025DE12 = {
 			isa = PBXGroup;
 			children = (
@@ -90,12 +106,10 @@
 				097AC81B1D88FAFA0025DE12 /* classes */,
 				097AC8011D87E3900025DE12 /* AppDelegate.swift */,
 				097AC8031D87E3900025DE12 /* ViewController.swift */,
+				0971339E1D93CC19007D710C /* LaunchScreenViewController.swift */,
 				097AC8131D87FBAB0025DE12 /* LoadingCell.swift */,
 				097AC8151D8802310025DE12 /* LoadingModel.swift */,
-				097AC8051D87E3900025DE12 /* Main.storyboard */,
-				097AC8081D87E3900025DE12 /* Assets.xcassets */,
-				097AC80A1D87E3900025DE12 /* LaunchScreen.storyboard */,
-				097AC80D1D87E3900025DE12 /* Info.plist */,
+				097133A11D93D713007D710C /* Support Files */,
 			);
 			path = STLoadingGroup;
 			sourceTree = "<group>";
@@ -172,6 +186,7 @@
 			files = (
 				097AC80C1D87E3900025DE12 /* LaunchScreen.storyboard in Resources */,
 				097AC8091D87E3900025DE12 /* Assets.xcassets in Resources */,
+				097133A31D93D74F007D710C /* Arciform.otf in Resources */,
 				097AC8071D87E3900025DE12 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -184,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				097AC81F1D88FB270025DE12 /* STLoadingGroup.swift in Sources */,
+				0971339F1D93CC19007D710C /* LaunchScreenViewController.swift in Sources */,
 				097AC8161D8802310025DE12 /* LoadingModel.swift in Sources */,
 				097AC8141D87FBAB0025DE12 /* LoadingCell.swift in Sources */,
 				097133991D937951007D710C /* STBouncyPreloaderLoading.swift in Sources */,

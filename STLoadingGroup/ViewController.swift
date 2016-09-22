@@ -47,8 +47,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        setupData()
-        setupUI()
+        let launchScreenVC = LaunchScreenViewController()
+        addChildViewController(launchScreenVC)
+        view.addSubview(launchScreenVC.view)
+        
+        
+        
+//        setupData()
+//        setupUI()
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
