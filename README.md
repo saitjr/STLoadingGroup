@@ -2,7 +2,9 @@
 
 A Group of Loading Animations.
 
-<iframe src="https://player.vimeo.com/video/183843221" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/183843221">STLoadingGroup</a> from <a href="https://vimeo.com/user57006529">saitjr</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+[![STLoadingGroup](./resources/video_first_frame.png)](https://vimeo.com/183843221)
+
+## ScreenShot
 
 ![](./resources/loading.gif)
 
