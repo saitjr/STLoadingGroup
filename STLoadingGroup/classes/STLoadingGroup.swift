@@ -17,39 +17,25 @@ enum STLoadingStyle: String {
     case zhihu = "zhihu"
 }
 
-struct STLoadingConfig {
-    var lineWidth: CGFloat = 4
-    var animationDuration: TimeInterval = 1
-    var tintColor: UIColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1)
-    
-    init(lineWidth: CGFloat = 4, animationDuration: TimeInterval = 1, tintColor: UIColor = .white) {
-        self.lineWidth = lineWidth
-        self.animationDuration = animationDuration
-        self.tintColor = tintColor
-    }
-}
-
 class STLoadingGroup {
     fileprivate let loadingView: STLoadingable
-    fileprivate let config: STLoadingConfig
     
-    init(side: CGFloat, style: STLoadingStyle, config: STLoadingConfig = STLoadingConfig()) {
-        self.config = config
+    init(side: CGFloat, style: STLoadingStyle) {
         
         let bounds = CGRect(origin: .zero, size: CGSize(width: side, height: side))
         switch style {
         case .submit:
-            loadingView = STSubmitLoading(frame: bounds, config: self.config)
+            loadingView = STSubmitLoading(frame: bounds)
         case .glasses:
-            loadingView = STGlassesLoading(frame: bounds, config: self.config)
+            loadingView = STGlassesLoading(frame: bounds)
         case .walk:
-            loadingView = STWalkLoading(frame: bounds, config: self.config)
+            loadingView = STWalkLoading(frame: bounds)
         case .arch:
-            loadingView = STArchLoading(frame: bounds, config: self.config)
+            loadingView = STArchLoading(frame: bounds)
         case .bouncyPreloader:
-            loadingView = STBouncyPreloaderLoading(frame: bounds, config: self.config)
+            loadingView = STBouncyPreloaderLoading(frame: bounds)
         case .zhihu:
-            loadingView = STZhiHuLoading(frame: bounds, config: self.config)
+            loadingView = STZhiHuLoading(frame: bounds)
         }
     }
 }

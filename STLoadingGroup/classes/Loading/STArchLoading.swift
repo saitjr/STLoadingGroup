@@ -38,11 +38,9 @@ class STArchLoading: UIView {
     fileprivate var spotGroup: [CAShapeLayer] = []
     fileprivate var shadowGroup: [CALayer] = []
     
-    fileprivate let config: STLoadingConfig
     internal var isLoading: Bool = false
     
-    init(frame: CGRect, config: STLoadingConfig) {
-        self.config = config
+    override init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
     }
@@ -68,9 +66,9 @@ extension STArchLoading {
             let spotLayer = CAShapeLayer()
             spotLayer.lineCap = "round"
             spotLayer.lineJoin = "round"
-            spotLayer.lineWidth = config.lineWidth
+            spotLayer.lineWidth = lineWidth
             spotLayer.fillColor = UIColor.clear.cgColor
-            spotLayer.strokeColor = config.tintColor.cgColor
+            spotLayer.strokeColor = loadingTintColor.cgColor
             spotLayer.strokeEnd = 0.000001
             layer.addSublayer(spotLayer)
             spotGroup.append(spotLayer)
@@ -93,6 +91,20 @@ extension STArchLoading {
     }
 }
 
+extension STArchLoading: STLoadingConfig {
+    var animationDuration: TimeInterval {
+        return 1
+    }
+    
+    var lineWidth: CGFloat {
+        return 8
+    }
+    
+    var loadingTintColor: UIColor {
+        return .white
+    }
+}
+
 extension STArchLoading: STLoadingable {
     func startLoading() {
         guard !isLoading else {
@@ -107,8 +119,8 @@ extension STArchLoading: STLoadingable {
             let transformAnimation = CABasicAnimation(keyPath: "position.x")
             transformAnimation.fromValue = bounds.width * 1.1
             transformAnimation.toValue = bounds.width * 0.5
-            transformAnimation.duration = config.animationDuration
-            transformAnimation.fillMode = "forwards"
+            transformAnimation.duration = animationDuration
+            transformAnimation.fillMode = kCAFillModeForwards
             transformAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
             transformAnimation.isRemovedOnCompletion = false
             
@@ -121,14 +133,14 @@ extension STArchLoading: STLoadingable {
             strokeStartAniamtion.toValue = 1
             
             let strokeAnimationGroup = CAAnimationGroup()
-            strokeAnimationGroup.duration = (config.animationDuration - TimeInterval(3 - i) * config.animationDuration * 0.1) * 0.8
+            strokeAnimationGroup.duration = (animationDuration - TimeInterval(3 - i) * animationDuration * 0.1) * 0.8
             strokeAnimationGroup.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
             strokeAnimationGroup.fillMode = kCAFillModeForwards
             strokeAnimationGroup.isRemovedOnCompletion = false
             strokeAnimationGroup.animations = [strokeStartAniamtion, strokeEndAnimation]
             
             let animationGroup = CAAnimationGroup()
-            animationGroup.duration = config.animationDuration
+            animationGroup.duration = animationDuration
             animationGroup.repeatCount = Float.infinity
             animationGroup.animations = [transformAnimation, strokeAnimationGroup]
             spotLayer.add(animationGroup, forKey: "animationGroup")

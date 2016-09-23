@@ -36,11 +36,9 @@ class STZhiHuLoading: UIView {
     
     fileprivate let cycleLayer: CAShapeLayer = CAShapeLayer()
     
-    fileprivate let config: STLoadingConfig
     internal var isLoading: Bool = false
     
-    init(frame: CGRect, config: STLoadingConfig) {
-        self.config = config
+    override init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
     }
@@ -64,9 +62,9 @@ extension STZhiHuLoading {
     internal func setupUI() {
         cycleLayer.lineCap = kCALineCapRound
         cycleLayer.lineJoin = kCALineJoinRound
-        cycleLayer.lineWidth = config.lineWidth
+        cycleLayer.lineWidth = lineWidth
         cycleLayer.fillColor = UIColor.clear.cgColor
-        cycleLayer.strokeColor = config.tintColor.cgColor
+        cycleLayer.strokeColor = loadingTintColor.cgColor
         cycleLayer.strokeEnd = 0
         layer.addSublayer(cycleLayer)
     }
@@ -74,6 +72,20 @@ extension STZhiHuLoading {
     internal func updateUI() {
         cycleLayer.frame = bounds
         cycleLayer.path = UIBezierPath(ovalIn: bounds).cgPath
+    }
+}
+
+extension STZhiHuLoading: STLoadingConfig {
+    var animationDuration: TimeInterval {
+        return 1
+    }
+    
+    var lineWidth: CGFloat {
+        return 4
+    }
+    
+    var loadingTintColor: UIColor {
+        return .white
     }
 }
 
@@ -94,7 +106,7 @@ extension STZhiHuLoading: STLoadingable {
         strokeEndAnimation.toValue = 1.0
 
         let animationGroup = CAAnimationGroup()
-        animationGroup.duration = config.animationDuration
+        animationGroup.duration = animationDuration
         animationGroup.repeatCount = Float.infinity
         animationGroup.animations = [strokeStartAnimation, strokeEndAnimation]
         cycleLayer.add(animationGroup, forKey: "animationGroup")
@@ -103,7 +115,7 @@ extension STZhiHuLoading: STLoadingable {
         rotateAnimation.fromValue = 0
         rotateAnimation.toValue = M_PI * 2
         rotateAnimation.repeatCount = Float.infinity
-        rotateAnimation.duration = config.animationDuration * 4
+        rotateAnimation.duration = animationDuration * 4
         cycleLayer.add(rotateAnimation, forKey: "rotateAnimation")
     }
     

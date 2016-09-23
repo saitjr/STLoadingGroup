@@ -35,12 +35,10 @@ import UIKit
 class STSubmitLoading: UIView {
 
     fileprivate let cycleLayer: CAShapeLayer = CAShapeLayer()
-    fileprivate let config: STLoadingConfig
     
     internal var isLoading: Bool = false
     
-    init(frame: CGRect, config: STLoadingConfig) {
-        self.config = config
+    override init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
     }
@@ -64,9 +62,9 @@ extension STSubmitLoading {
     fileprivate func setupUI() {
         cycleLayer.lineCap = kCALineCapRound
         cycleLayer.lineJoin = kCALineJoinRound
-        cycleLayer.lineWidth = config.lineWidth
+        cycleLayer.lineWidth = lineWidth
         cycleLayer.fillColor = UIColor.clear.cgColor
-        cycleLayer.strokeColor = config.tintColor.cgColor
+        cycleLayer.strokeColor = loadingTintColor.cgColor
         cycleLayer.strokeEnd = 0
         
         layer.addSublayer(cycleLayer)
@@ -76,6 +74,20 @@ extension STSubmitLoading {
         cycleLayer.bounds = bounds
         cycleLayer.position = CGPoint(x: bounds.width / 2.0, y: bounds.height / 2.0)
         cycleLayer.path = UIBezierPath(ovalIn: bounds).cgPath
+    }
+}
+
+extension STSubmitLoading: STLoadingConfig {
+    var animationDuration: TimeInterval {
+        return 1
+    }
+    
+    var lineWidth: CGFloat {
+        return 4
+    }
+    
+    var loadingTintColor: UIColor {
+        return .white
     }
 }
 
@@ -93,13 +105,13 @@ extension STSubmitLoading: STLoadingable {
         strokeEndAnimation.toValue = 0.25
         strokeEndAnimation.fillMode = kCAFillModeForwards
         strokeEndAnimation.isRemovedOnCompletion = false
-        strokeEndAnimation.duration = config.animationDuration / 4.0
+        strokeEndAnimation.duration = animationDuration / 4.0
         cycleLayer.add(strokeEndAnimation, forKey: "strokeEndAnimation")
         
         let rotateAnimation = CABasicAnimation(keyPath: "transform.rotation")
         rotateAnimation.fromValue = 0
         rotateAnimation.toValue = M_PI * 2
-        rotateAnimation.duration = config.animationDuration
+        rotateAnimation.duration = animationDuration
         rotateAnimation.beginTime = CACurrentMediaTime() + strokeEndAnimation.duration
         rotateAnimation.repeatCount = Float.infinity
         cycleLayer.add(rotateAnimation, forKey: "rotateAnimation")
@@ -114,7 +126,7 @@ extension STSubmitLoading: STLoadingable {
         strokeEndAnimation.toValue = 1
         strokeEndAnimation.fillMode = kCAFillModeForwards
         strokeEndAnimation.isRemovedOnCompletion = false
-        strokeEndAnimation.duration = config.animationDuration * 3.0 / 4.0
+        strokeEndAnimation.duration = animationDuration * 3.0 / 4.0
         cycleLayer.add(strokeEndAnimation, forKey: "catchStrokeEndAnimation")
         
         UIView.animate(withDuration: 0.3, delay: strokeEndAnimation.duration, options: UIViewAnimationOptions(), animations: { () -> Void in

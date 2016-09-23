@@ -35,13 +35,11 @@ import UIKit
 class STWalkLoading: UIView {
     
     fileprivate var spotGroup: [CAShapeLayer] = []
-    fileprivate let config: STLoadingConfig
     fileprivate let spotCount = 4
     
     internal var isLoading: Bool = false
     
-    init(frame: CGRect, config: STLoadingConfig) {
-        self.config = config
+    override init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
     }
@@ -65,10 +63,10 @@ extension STWalkLoading {
     internal func setupUI() {
         for _ in 0 ..< spotCount {
             let spotLayer = CAShapeLayer()
-            spotLayer.bounds = CGRect(x: 0, y: 0, width: config.lineWidth, height: config.lineWidth)
+            spotLayer.bounds = CGRect(x: 0, y: 0, width: lineWidth, height: lineWidth)
             spotLayer.path = UIBezierPath(ovalIn: spotLayer.bounds).cgPath
-            spotLayer.fillColor = config.tintColor.cgColor
-            spotLayer.strokeColor = config.tintColor.cgColor
+            spotLayer.fillColor = loadingTintColor.cgColor
+            spotLayer.strokeColor = loadingTintColor.cgColor
             layer.addSublayer(spotLayer)
             spotGroup.append(spotLayer)
         }
@@ -79,6 +77,20 @@ extension STWalkLoading {
             let spotLayer = spotGroup[i]
             spotLayer.position = CGPoint(x: CGFloat(i) * bounds.width / CGFloat(spotCount - 1), y: bounds.height / 2.0)
         }
+    }
+}
+
+extension STWalkLoading: STLoadingConfig {
+    var animationDuration: TimeInterval {
+        return 0.5
+    }
+    
+    var lineWidth: CGFloat {
+        return 8
+    }
+    
+    var loadingTintColor: UIColor {
+        return .white
     }
 }
 
@@ -95,7 +107,7 @@ extension STWalkLoading: STLoadingable {
         let pathAnimation = CAKeyframeAnimation(keyPath: "position")
         pathAnimation.path = UIBezierPath(arcCenter: CGPoint(x: bounds.width / 2.0, y: bounds.height / 2.0), radius: bounds.width / 2.0, startAngle: CGFloat(M_PI), endAngle: 0, clockwise: true).cgPath
         pathAnimation.calculationMode = kCAAnimationPaced
-        pathAnimation.duration = config.animationDuration
+        pathAnimation.duration = animationDuration
         pathAnimation.repeatCount = Float.infinity
         spotLayer1.add(pathAnimation, forKey: "pathAnimation")
         
@@ -103,7 +115,7 @@ extension STWalkLoading: STLoadingable {
             let spotLayer = spotGroup[i]
             let positionAnimation = CABasicAnimation(keyPath: "position.x")
             positionAnimation.toValue = spotLayer.position.x - bounds.width / CGFloat(spotCount - 1)
-            positionAnimation.duration = config.animationDuration
+            positionAnimation.duration = animationDuration
             positionAnimation.repeatCount = Float.infinity
             spotLayer.add(positionAnimation, forKey: "positionAnimation")
         }

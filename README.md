@@ -2,12 +2,14 @@
 
 A Group of Loading Animations.
 
+<iframe src="https://player.vimeo.com/video/183843221" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/183843221">STLoadingGroup</a> from <a href="https://vimeo.com/user57006529">saitjr</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
 ![](./resources/loading.gif)
 
 ## Usage
 
 ```swift
-let loadingGroup = STLoadingGroup(side: 100, style: .arch, config: STLoadingConfig(lineWidth: 8, animationDuration: 1.0))
+let loadingGroup = let loadingGroup = STLoadingGroup(side: side, style: style)
 loadingGroup.show(inView: view)
 loadingGroup.startLoading()
 // stop:  loadnigGroup.stopLoading()
@@ -17,14 +19,20 @@ loadingGroup.startLoading()
 
 If you want to add your own loading:
 
-​	1\.Comfirm `STLoadingable` protocol and implement required functions (there is a `isLoading` property left)
+​	1\.Comfirm `STLoadingable` and `STLoadingConfigable` protocol and implement required functions (there is a `isLoading` property left)
 
 ```swift
 protocol STLoadingable {
-    var isLoading: Bool {get}
+    var isLoading: Bool { get }
     
     func startLoading()
     func stopLoading()
+}
+
+protocol STLoadingConfig {
+    var animationDuration: TimeInterval { get }
+    var lineWidth: CGFloat { get }
+    var loadingTintColor: UIColor { get }
 }
 ```
 
@@ -46,52 +54,52 @@ enum STLoadingStyle: String {
 ```swift
 class STLoadingGroup {
     fileprivate let loadingView: STLoadingable
-    fileprivate let config: STLoadingConfig
     
-    init(side: CGFloat, style: STLoadingStyle, config: STLoadingConfig = STLoadingConfig()) {
-        self.config = config
+    init(side: CGFloat, style: STLoadingStyle) {
         
         let bounds = CGRect(origin: .zero, size: CGSize(width: side, height: side))
         switch style {
         case .submit:
-            loadingView = STSubmitLoading(frame: bounds, config: self.config)
+            loadingView = STSubmitLoading(frame: bounds)
         case .glasses:
-            loadingView = STGlassesLoading(frame: bounds, config: self.config)
+            loadingView = STGlassesLoading(frame: bounds)
         case .walk:
-            loadingView = STWalkLoading(frame: bounds, config: self.config)
+            loadingView = STWalkLoading(frame: bounds)
         case .arch:
-            loadingView = STArchLoading(frame: bounds, config: self.config)
+            loadingView = STArchLoading(frame: bounds)
         case .bouncyPreloader:
-            loadingView = STBouncyPreloaderLoading(frame: bounds, config: self.config)
+            loadingView = STBouncyPreloaderLoading(frame: bounds)
         case .zhihu:
-            loadingView = STZhiHuLoading(frame: bounds, config: self.config)
-        // add your code here...
+            loadingView = STZhiHuLoading(frame: bounds)
+        // insert your code here
         }
     }
 }
 ```
 
-## .glasses
+## Thanks
+
+#### .glasses
 
 **Designed by** : [bingbing](https://dribbble.com/bingbing). **Dribbble link** : [click me !](https://dribbble.com/shots/2124921-togic-loading)
 
-## .walk
+#### .walk
 
 **Designed by** : [sandeep virk](https://dribbble.com/sandeepvirk87). **Dribbble link** : [click me !](https://dribbble.com/shots/2341109-Loading)
 
-## .arch
+#### .arch
 
 **Designed by** : [John LaPrime](https://dribbble.com/johnlaprime). **Dribbble link** : [click me !](https://dribbble.com/shots/2392622-Loading-Animation)
 
-## .bouncyPreloader
+#### .bouncyPreloader
 
 **Designed by** :  [Joash Berkeley](https://dribbble.com/JoashBerkeley). **Dribbble link** : [click me !](https://dribbble.com/shots/2391053-Bouncy-Preloader)
 
-## .submit
+#### .submit
 
 Loading animation in submit button.
 
-## .zhiHu
+#### .zhiHu
 
 **Designed by** : ZhiHu daily.
 

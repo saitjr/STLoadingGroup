@@ -100,21 +100,13 @@ extension ViewController {
         
         for i in 0..<styles.count {
             var side: CGFloat = 50
-            var lineWidth: CGFloat = 4
-            var duration: TimeInterval = 1.0
             let style = styles[i]
             
             if style == .arch {
                 side = 80
             }
-            if style == .glasses || style == .walk || style == .arch {
-                lineWidth = 8
-            }
-            if style == .walk || style == .bouncyPreloader {
-                duration = 0.5
-            }
             
-            let loadingGroup = STLoadingGroup(side: side, style: style, config: STLoadingConfig(lineWidth: lineWidth, animationDuration: duration))
+            let loadingGroup = STLoadingGroup(side: side, style: style)
             let loadingModel = LoadingModel(title: style.rawValue, color: .clear, loadingGroup: loadingGroup)
             dataSource.append(loadingModel)
         }

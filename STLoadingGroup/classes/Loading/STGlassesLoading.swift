@@ -35,13 +35,11 @@ import UIKit
 class STGlassesLoading: UIView {
 
     fileprivate var spotGroup: [CAShapeLayer] = []
-    fileprivate let config: STLoadingConfig
     fileprivate let spotCount: Int = 3
     
     internal var isLoading: Bool = false
     
-    init(frame: CGRect, config: STLoadingConfig) {
-        self.config = config
+    override init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
     }
@@ -65,10 +63,10 @@ extension STGlassesLoading {
     internal func setupUI() {
         for _ in 0 ..< spotCount {
             let spotLayer = CAShapeLayer()
-            spotLayer.bounds = CGRect(x: 0, y: 0, width: config.lineWidth, height: config.lineWidth)
+            spotLayer.bounds = CGRect(x: 0, y: 0, width: lineWidth, height: lineWidth)
             spotLayer.path = UIBezierPath(ovalIn: spotLayer.bounds).cgPath
-            spotLayer.fillColor = config.tintColor.cgColor
-            spotLayer.strokeColor = config.tintColor.cgColor
+            spotLayer.fillColor = loadingTintColor.cgColor
+            spotLayer.strokeColor = loadingTintColor.cgColor
             layer.addSublayer(spotLayer)
             spotGroup.append(spotLayer)
         }
@@ -87,7 +85,7 @@ extension STGlassesLoading {
         let pathToLeftAnimation = CAKeyframeAnimation(keyPath: "position")
         pathToLeftAnimation.path = path.cgPath
         pathToLeftAnimation.calculationMode = kCAAnimationPaced
-        pathToLeftAnimation.duration = config.animationDuration / 2.0
+        pathToLeftAnimation.duration = animationDuration / 2.0
         if needRmoveOnCompletion {
             pathToLeftAnimation.fillMode = kCAFillModeForwards
             pathToLeftAnimation.isRemovedOnCompletion = false
@@ -95,7 +93,7 @@ extension STGlassesLoading {
         
         let delayGroupAnimation = CAAnimationGroup()
         delayGroupAnimation.animations = [pathToLeftAnimation]
-        delayGroupAnimation.duration = config.animationDuration
+        delayGroupAnimation.duration = animationDuration
         delayGroupAnimation.repeatCount = Float.infinity
         
         if beginTime != 0 {
@@ -103,6 +101,20 @@ extension STGlassesLoading {
         }
         
         return delayGroupAnimation
+    }
+}
+
+extension STGlassesLoading: STLoadingConfig {
+    var animationDuration: TimeInterval {
+        return 1
+    }
+    
+    var lineWidth: CGFloat {
+        return 8
+    }
+    
+    var loadingTintColor: UIColor {
+        return .white
     }
 }
 
@@ -130,7 +142,7 @@ extension STGlassesLoading: STLoadingable {
         let pathToRightAnimation1 = CAKeyframeAnimation(keyPath: "position")
         pathToRightAnimation1.path = pathToRight1.cgPath
         pathToRightAnimation1.calculationMode = kCAAnimationPaced
-        pathToRightAnimation1.duration = config.animationDuration
+        pathToRightAnimation1.duration = animationDuration
         pathToRightAnimation1.repeatCount = Float.infinity
         spotLayer1.add(pathToRightAnimation1, forKey: "pathToRightAnimation1")
         
@@ -139,7 +151,7 @@ extension STGlassesLoading: STLoadingable {
         spotLayer2.add(spot2Animation, forKey: "spot2Animation")
         
         let pathToLeft2 = UIBezierPath(arcCenter: arcCenterRight, radius: radius, startAngle: 0, endAngle: CGFloat(M_PI), clockwise: true)
-        let spot3Animation = generalGroupAnimation(path: pathToLeft2, needRmoveOnCompletion: false, beginTime: config.animationDuration / 2.0)
+        let spot3Animation = generalGroupAnimation(path: pathToLeft2, needRmoveOnCompletion: false, beginTime: animationDuration / 2.0)
         spotLayer3.add(spot3Animation, forKey: "spot3Animation")
     }
     

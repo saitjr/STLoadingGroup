@@ -38,11 +38,9 @@ class STBouncyPreloaderLoading: UIView {
     fileprivate let spotReplicatorLayer: CAReplicatorLayer = CAReplicatorLayer()
     fileprivate let spotCount = 3
     
-    fileprivate let config: STLoadingConfig
     internal var isLoading: Bool = false
     
-    init(frame: CGRect, config: STLoadingConfig) {
-        self.config = config
+    override init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
     }
@@ -66,24 +64,38 @@ extension STBouncyPreloaderLoading {
     internal func setupUI() {
         self.alpha = 0
         
-        spotLayer.frame = CGRect(x: 0, y: 0, width: config.lineWidth, height: config.lineWidth)
+        spotLayer.frame = CGRect(x: 0, y: 0, width: lineWidth, height: lineWidth)
         spotLayer.lineCap = kCALineCapRound
         spotLayer.lineJoin = kCALineJoinRound
-        spotLayer.lineWidth = config.lineWidth
-        spotLayer.fillColor = config.tintColor.cgColor
-        spotLayer.strokeColor = config.tintColor.cgColor
+        spotLayer.lineWidth = lineWidth
+        spotLayer.fillColor = loadingTintColor.cgColor
+        spotLayer.strokeColor = loadingTintColor.cgColor
         spotLayer.path = UIBezierPath(ovalIn: spotLayer.bounds).cgPath
         spotReplicatorLayer.addSublayer(spotLayer)
         
         spotReplicatorLayer.instanceCount = spotCount
-        spotReplicatorLayer.instanceDelay = config.animationDuration / 5
+        spotReplicatorLayer.instanceDelay = animationDuration / 5
         layer.addSublayer(spotReplicatorLayer)
     }
     
     internal func updateUI() {
-        spotLayer.frame = CGRect(x: config.lineWidth / 2.0, y: (bounds.height - config.lineWidth) / 2.0, width: config.lineWidth, height: config.lineWidth)
+        spotLayer.frame = CGRect(x: lineWidth / 2.0, y: (bounds.height - lineWidth) / 2.0, width: lineWidth, height: lineWidth)
         spotReplicatorLayer.frame = bounds
         spotReplicatorLayer.instanceTransform = CATransform3DMakeTranslation(bounds.width / CGFloat(spotCount), 0, 0)
+    }
+}
+
+extension STBouncyPreloaderLoading: STLoadingConfig {
+    var animationDuration: TimeInterval {
+        return 0.5
+    }
+    
+    var lineWidth: CGFloat {
+        return 4
+    }
+    
+    var loadingTintColor: UIColor {
+        return .white
     }
 }
 
@@ -106,7 +118,7 @@ extension STBouncyPreloaderLoading: STLoadingable {
         positionAnimation.values = [centerY, downY, centerY, centerY]
         positionAnimation.keyTimes = [0.0, 0.33, 0.63, 1.0]
         positionAnimation.repeatCount = Float.infinity
-        positionAnimation.duration = config.animationDuration + 0.4
+        positionAnimation.duration = animationDuration + 0.4
         spotLayer.add(positionAnimation, forKey: "positionAnimation")
     }
     
