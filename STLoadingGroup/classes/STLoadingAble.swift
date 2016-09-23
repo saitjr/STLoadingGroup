@@ -8,11 +8,13 @@
 
 import UIKit
 
+typealias STEmptyCallback = () -> ()
+
 protocol STLoadingable {
     var isLoading: Bool { get }
     
     func startLoading()
-    func stopLoading()
+    func stopLoading(finish: STEmptyCallback?)
 }
 
 protocol STLoadingConfig {

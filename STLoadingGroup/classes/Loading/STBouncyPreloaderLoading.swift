@@ -100,7 +100,7 @@ extension STBouncyPreloaderLoading: STLoadingConfig {
 }
 
 extension STBouncyPreloaderLoading: STLoadingable {
-    func startLoading() {
+    internal func startLoading() {
         guard !isLoading else {
             return
         }
@@ -122,7 +122,7 @@ extension STBouncyPreloaderLoading: STLoadingable {
         spotLayer.add(positionAnimation, forKey: "positionAnimation")
     }
     
-    func stopLoading() {
+    internal func stopLoading(finish: STEmptyCallback? = nil) {
         guard isLoading else {
             return
         }
@@ -131,6 +131,8 @@ extension STBouncyPreloaderLoading: STLoadingable {
         }, completion: { _ in
             self.isLoading = false
             self.spotLayer.removeAllAnimations()
+            
+            finish?()
         })
     }
 }

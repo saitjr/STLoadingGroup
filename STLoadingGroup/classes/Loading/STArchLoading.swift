@@ -106,7 +106,7 @@ extension STArchLoading: STLoadingConfig {
 }
 
 extension STArchLoading: STLoadingable {
-    func startLoading() {
+    internal func startLoading() {
         guard !isLoading else {
             return
         }
@@ -147,7 +147,7 @@ extension STArchLoading: STLoadingable {
         }
     }
     
-    func stopLoading() {
+    internal func stopLoading(finish: STEmptyCallback? = nil) {
         guard isLoading else {
             return
         }
@@ -158,6 +158,7 @@ extension STArchLoading: STLoadingable {
             for spotLayer in self.spotGroup {
                 spotLayer.removeAllAnimations()
             }
+            finish?()
         })
     }
 }

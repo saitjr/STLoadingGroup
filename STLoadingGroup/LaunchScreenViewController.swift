@@ -27,6 +27,14 @@ class LaunchScreenViewController: UIViewController {
         labels = generateLabels(text: "Loading...")
         layoutLabels(labels: labels)
     }
+    
+    // debug animation
+//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        for label in labels {
+//            label.alpha = 0
+//        }
+//        animteLabels(labels: labels)
+//    }
 }
 
 extension LaunchScreenViewController {
@@ -74,11 +82,11 @@ extension LaunchScreenViewController {
         var delay: TimeInterval = 0
         
         for (i, label) in labels.enumerated() {
-            var offsetX: CGFloat = 10
+            var offsetX: CGFloat = 50
             if i > labels.count / 2 {
                 offsetX = offsetX * -1
             }
-            let t = CGAffineTransform(scaleX: 0.5, y: 0.5).translatedBy(x: offsetX, y: 0)
+            let t = CGAffineTransform(scaleX: 0.5, y: 0.5).translatedBy(x: offsetX, y: 50)
             label.transform = t
             
             let duration: TimeInterval = 0.5 + TimeInterval(labels.count - i) * 0.04

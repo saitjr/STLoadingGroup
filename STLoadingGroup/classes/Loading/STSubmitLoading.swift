@@ -92,7 +92,7 @@ extension STSubmitLoading: STLoadingConfig {
 }
 
 extension STSubmitLoading: STLoadingable {
-    func startLoading() {
+    internal func startLoading() {
         guard !isLoading else {
             return
         }
@@ -117,7 +117,7 @@ extension STSubmitLoading: STLoadingable {
         cycleLayer.add(rotateAnimation, forKey: "rotateAnimation")
     }
     
-    func stopLoading() {
+    internal func stopLoading(finish: STEmptyCallback? = nil) {
         guard isLoading else {
             return
         }
@@ -134,6 +134,7 @@ extension STSubmitLoading: STLoadingable {
         }, completion: { _ in
             self.cycleLayer.removeAllAnimations()
             self.isLoading = false
+            finish?()
         })
     }
 }

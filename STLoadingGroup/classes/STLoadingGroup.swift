@@ -50,7 +50,7 @@ extension STLoadingGroup {
     }
     
     func stopLoading() {
-        loadingView.stopLoading()
+        loadingView.stopLoading(finish: nil)
     }
 }
 
@@ -59,6 +59,9 @@ extension STLoadingGroup {
         guard let loadingView = loadingView as? UIView else {
             return
         }
+        if loadingView.superview != nil {
+            loadingView.removeFromSuperview()
+        }
         var showInView = UIApplication.shared.keyWindow ?? UIView()
         if let inView = inView {
             showInView = inView
@@ -66,5 +69,15 @@ extension STLoadingGroup {
         let showInViewSize = showInView.frame.size
         loadingView.center = CGPoint(x: showInViewSize.width * 0.5, y: showInViewSize.height * 0.5)
         showInView.addSubview(loadingView)
+    }
+    
+    func remove() {
+        guard let loadingView = loadingView as? UIView else {
+            return
+        }
+        if loadingView.superview != nil {
+            stopLoading()
+            
+        }
     }
 }

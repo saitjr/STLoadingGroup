@@ -90,7 +90,7 @@ extension STZhiHuLoading: STLoadingConfig {
 }
 
 extension STZhiHuLoading: STLoadingable {
-    func startLoading() {
+    internal func startLoading() {
         guard !isLoading else {
             return
         }
@@ -119,7 +119,7 @@ extension STZhiHuLoading: STLoadingable {
         cycleLayer.add(rotateAnimation, forKey: "rotateAnimation")
     }
     
-    func stopLoading() {
+    internal func stopLoading(finish: STEmptyCallback? = nil) {
         guard isLoading else {
             return
         }
@@ -129,6 +129,7 @@ extension STZhiHuLoading: STLoadingable {
         }, completion: { _ in
             self.cycleLayer.removeAllAnimations()
             self.isLoading = false
+            finish?()
         })
     }
 }

@@ -119,7 +119,7 @@ extension STGlassesLoading: STLoadingConfig {
 }
 
 extension STGlassesLoading: STLoadingable {
-    func startLoading() {
+    internal func startLoading() {
         guard !isLoading else {
             return
         }
@@ -155,7 +155,7 @@ extension STGlassesLoading: STLoadingable {
         spotLayer3.add(spot3Animation, forKey: "spot3Animation")
     }
     
-    func stopLoading() {
+    internal func stopLoading(finish: STEmptyCallback? = nil) {
         guard isLoading else {
             return
         }
@@ -166,6 +166,7 @@ extension STGlassesLoading: STLoadingable {
             for spotLayer in self.spotGroup {
                 spotLayer.removeAllAnimations()
             }
+            finish?()
         })
     }
 }
