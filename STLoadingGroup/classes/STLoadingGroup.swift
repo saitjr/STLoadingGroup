@@ -19,6 +19,7 @@ enum STLoadingStyle: String {
 
 class STLoadingGroup {
     fileprivate let loadingView: STLoadingable
+    fileprivate var finish: STEmptyCallback?
     
     init(side: CGFloat, style: STLoadingStyle) {
         
@@ -49,8 +50,9 @@ extension STLoadingGroup {
         loadingView.startLoading()
     }
     
-    func stopLoading() {
-        loadingView.stopLoading(finish: nil)
+    func stopLoading(finish: STEmptyCallback? = nil) {
+        self.finish = finish
+        loadingView.stopLoading(finish: finish)
     }
 }
 
@@ -76,8 +78,9 @@ extension STLoadingGroup {
             return
         }
         if loadingView.superview != nil {
-            stopLoading()
-            
+            stopLoading() {
+                loadingView.removeFromSuperview()
+            }
         }
     }
 }

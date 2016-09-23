@@ -47,6 +47,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        setupNotification()
         setupData()
         setupUI()
         
@@ -57,6 +58,18 @@ class ViewController: UIViewController {
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
+    }
+    
+    internal func enterForground() {
+        for model in dataSource {
+            model.loadingGroup?.startLoading()
+        }
+    }
+    
+    internal func enterBackground() {
+        for model in dataSource {
+            model.loadingGroup?.stopLoading()
+        }
     }
 }
 
@@ -110,6 +123,11 @@ extension ViewController {
             let loadingModel = LoadingModel(title: style.rawValue, color: .clear, loadingGroup: loadingGroup)
             dataSource.append(loadingModel)
         }
+    }
+    
+    fileprivate func setupNotification() {
+        NotificationCenter.default.addObserver(self, selector: #selector(enterForground), name: .UIApplicationWillEnterForeground, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(enterBackground), name: .UIApplicationDidEnterBackground, object: nil)
     }
 }
 
