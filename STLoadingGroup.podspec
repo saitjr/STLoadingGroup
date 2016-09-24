@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.authors      = { ‘saitjr’ => 'tangjr.work@gmail.com'}
   s.platform     = :ios, “8.0”
-  s.source       = { :git => "https://github.com/saitjr/TKit.git", :tag => s.version }
-  s.source_files = 'TKit', 'TKit/**/*.{h,m}'
+  s.source       = { :git => "https://github.com/saitjr/STLoadingGroup/tree/master/STLoadingGroup", :tag => s.version }
+  s.source_files = ‘STLoadingGroup’, 'STLoadingGroup/**/*.{swift}’
   s.requires_arc = true
 end
