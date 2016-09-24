@@ -38,11 +38,10 @@ class ViewController: UIViewController {
     }
     
     fileprivate lazy var selectedView: UIView = {
-        let view = UIView()
-        view.frame = CGRect(origin: .zero, size: self.cellSize)
-        view.backgroundColor = Const.tintColor
-        return view
-    }()
+        $0.frame = CGRect(origin: .zero, size: self.cellSize)
+        $0.backgroundColor = Const.tintColor
+        return $0
+    }(UIView())
 
     override func viewDidLoad() {
         super.viewDidLoad()
