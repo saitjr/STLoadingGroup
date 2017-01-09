@@ -60,7 +60,7 @@ class STGlassesLoading: UIView {
 }
 
 extension STGlassesLoading {
-    internal func setupUI() {
+    fileprivate func setupUI() {
         for _ in 0 ..< spotCount {
             let spotLayer = CAShapeLayer()
             spotLayer.bounds = CGRect(x: 0, y: 0, width: lineWidth, height: lineWidth)
@@ -72,7 +72,7 @@ extension STGlassesLoading {
         }
     }
     
-    internal func updateUI() {
+    fileprivate func updateUI() {
         for i in 0 ..< spotCount {
             let spotLayer = spotGroup[i]
             spotLayer.position = CGPoint(x: CGFloat(i) * bounds.width / CGFloat(spotCount - 1), y: bounds.height / 2.0)
@@ -81,7 +81,7 @@ extension STGlassesLoading {
 }
 
 extension STGlassesLoading {
-    internal func generalGroupAnimation(path: UIBezierPath, needRmoveOnCompletion: Bool, beginTime: CFTimeInterval) -> CAAnimationGroup {
+    fileprivate func generalGroupAnimation(path: UIBezierPath, needRmoveOnCompletion: Bool, beginTime: CFTimeInterval) -> CAAnimationGroup {
         let pathToLeftAnimation = CAKeyframeAnimation(keyPath: "position")
         pathToLeftAnimation.path = path.cgPath
         pathToLeftAnimation.calculationMode = kCAAnimationPaced

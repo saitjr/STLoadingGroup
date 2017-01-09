@@ -60,7 +60,7 @@ class STWalkLoading: UIView {
 }
 
 extension STWalkLoading {
-    internal func setupUI() {
+    fileprivate func setupUI() {
         for _ in 0 ..< spotCount {
             let spotLayer = CAShapeLayer()
             spotLayer.bounds = CGRect(x: 0, y: 0, width: lineWidth, height: lineWidth)
@@ -72,7 +72,7 @@ extension STWalkLoading {
         }
     }
     
-    internal func updateUI() {
+    fileprivate func updateUI() {
         for i in 0 ..< spotCount {
             let spotLayer = spotGroup[i]
             spotLayer.position = CGPoint(x: CGFloat(i) * bounds.width / CGFloat(spotCount - 1), y: bounds.height / 2.0)
