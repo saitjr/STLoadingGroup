@@ -108,7 +108,7 @@ extension ViewController {
     }
     
     fileprivate func setupData() {
-        let styles: [STLoadingStyle] = [.submit, .glasses, .walk, .arch, .bouncyPreloader, .zhihu]
+        let styles: [STLoadingStyle] = [.submit, .glasses, .walk, .arch, .bouncyPreloader, .zhihu, .triangle]
         
         for i in 0..<styles.count {
             var side: CGFloat = 50

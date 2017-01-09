@@ -24,6 +24,7 @@
 		097AC8161D8802310025DE12 /* LoadingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097AC8151D8802310025DE12 /* LoadingModel.swift */; };
 		097AC81F1D88FB270025DE12 /* STLoadingGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097AC81E1D88FB270025DE12 /* STLoadingGroup.swift */; };
 		098EF9AF1D8933C2000D95F9 /* STLoadingable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098EF9AE1D8933C2000D95F9 /* STLoadingable.swift */; };
+		09E094BE1E232948004E8E92 /* STTriangleLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E094BD1E232948004E8E92 /* STTriangleLoading.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		097AC8151D8802310025DE12 /* LoadingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingModel.swift; sourceTree = "<group>"; };
 		097AC81E1D88FB270025DE12 /* STLoadingGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STLoadingGroup.swift; sourceTree = "<group>"; };
 		098EF9AE1D8933C2000D95F9 /* STLoadingable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STLoadingable.swift; sourceTree = "<group>"; };
+		09E094BD1E232948004E8E92 /* STTriangleLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STTriangleLoading.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				097133951D937951007D710C /* STSubmitLoading.swift */,
 				097133961D937951007D710C /* STWalkLoading.swift */,
 				097133971D937951007D710C /* STZhiHuLoading.swift */,
+				09E094BD1E232948004E8E92 /* STTriangleLoading.swift */,
 			);
 			path = Loading;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				097AC81F1D88FB270025DE12 /* STLoadingGroup.swift in Sources */,
 				0971339F1D93CC19007D710C /* LaunchScreenViewController.swift in Sources */,
 				097AC8161D8802310025DE12 /* LoadingModel.swift in Sources */,
+				09E094BE1E232948004E8E92 /* STTriangleLoading.swift in Sources */,
 				097AC8141D87FBAB0025DE12 /* LoadingCell.swift in Sources */,
 				097133991D937951007D710C /* STBouncyPreloaderLoading.swift in Sources */,
 				098EF9AF1D8933C2000D95F9 /* STLoadingable.swift in Sources */,

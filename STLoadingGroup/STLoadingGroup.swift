@@ -15,6 +15,7 @@ enum STLoadingStyle: String {
     case arch = "arch"
     case bouncyPreloader = "bouncyPreloader"
     case zhihu = "zhihu"
+    case triangle = "triangle"
 }
 
 class STLoadingGroup {
@@ -37,6 +38,8 @@ class STLoadingGroup {
             loadingView = STBouncyPreloaderLoading(frame: bounds)
         case .zhihu:
             loadingView = STZhiHuLoading(frame: bounds)
+        case .triangle:
+            loadingView = STTriangleLoading(frame: bounds)
         }
     }
 }
