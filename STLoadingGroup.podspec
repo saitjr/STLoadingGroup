@@ -6,5 +6,5 @@ Pod::Spec.new do |spec|
   spec.authors      = { 'tangjr' => 'tangjr.work@gmail.com' }
   spec.summary      = 'A Group of Loading Animations.'
   spec.source       = { :git => 'https://github.com/saitjr/STLoadingGroup.git', :tag => '2.0' }
-  spec.source_files = 'STLoadingGroup/*.{swift}'
+  spec.source_files = 'STLoadingGroup/**/*.{swift}'
 end
