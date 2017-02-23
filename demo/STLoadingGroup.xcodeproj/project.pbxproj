@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		095F92DC1E5D29DE00433CA6 /* STPacManLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095F92DB1E5D29DE00433CA6 /* STPacManLoading.swift */; };
 		097133981D937951007D710C /* STArchLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097133921D937951007D710C /* STArchLoading.swift */; };
 		097133991D937951007D710C /* STBouncyPreloaderLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097133931D937951007D710C /* STBouncyPreloaderLoading.swift */; };
 		0971339A1D937951007D710C /* STGlassesLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097133941D937951007D710C /* STGlassesLoading.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		095F92DB1E5D29DE00433CA6 /* STPacManLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STPacManLoading.swift; sourceTree = "<group>"; };
 		097133921D937951007D710C /* STArchLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STArchLoading.swift; sourceTree = "<group>"; };
 		097133931D937951007D710C /* STBouncyPreloaderLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STBouncyPreloaderLoading.swift; sourceTree = "<group>"; };
 		097133941D937951007D710C /* STGlassesLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STGlassesLoading.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				097133961D937951007D710C /* STWalkLoading.swift */,
 				097133971D937951007D710C /* STZhiHuLoading.swift */,
 				09E094BD1E232948004E8E92 /* STTriangleLoading.swift */,
+				095F92DB1E5D29DE00433CA6 /* STPacManLoading.swift */,
 			);
 			path = Loading;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 				0971339B1D937951007D710C /* STSubmitLoading.swift in Sources */,
 				0971339A1D937951007D710C /* STGlassesLoading.swift in Sources */,
 				0971339C1D937951007D710C /* STWalkLoading.swift in Sources */,
+				095F92DC1E5D29DE00433CA6 /* STPacManLoading.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

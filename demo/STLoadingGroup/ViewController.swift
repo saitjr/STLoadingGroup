@@ -50,9 +50,9 @@ class ViewController: UIViewController {
         setupData()
         setupUI()
         
-        let launchScreenVC = LaunchScreenViewController()
-        addChildViewController(launchScreenVC)
-        view.addSubview(launchScreenVC.view)
+//        let launchScreenVC = LaunchScreenViewController()
+//        addChildViewController(launchScreenVC)
+//        view.addSubview(launchScreenVC.view)
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -108,7 +108,7 @@ extension ViewController {
     }
     
     fileprivate func setupData() {
-        let styles: [STLoadingStyle] = [.submit, .glasses, .walk, .arch, .bouncyPreloader, .zhihu, .triangle]
+        let styles: [STLoadingStyle] = [.submit, .glasses, .walk, .arch, .bouncyPreloader, .zhihu, .triangle, .pacMan]
         
         for i in 0..<styles.count {
             var side: CGFloat = 50
