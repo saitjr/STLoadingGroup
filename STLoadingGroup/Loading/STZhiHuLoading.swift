@@ -59,7 +59,7 @@ class STZhiHuLoading: UIView {
 }
 
 extension STZhiHuLoading {
-    internal func setupUI() {
+    fileprivate func setupUI() {
         cycleLayer.lineCap = kCALineCapRound
         cycleLayer.lineJoin = kCALineJoinRound
         cycleLayer.lineWidth = lineWidth
@@ -69,7 +69,7 @@ extension STZhiHuLoading {
         layer.addSublayer(cycleLayer)
     }
     
-    internal func updateUI() {
+    fileprivate func updateUI() {
         cycleLayer.frame = bounds
         cycleLayer.path = UIBezierPath(ovalIn: bounds).cgPath
     }

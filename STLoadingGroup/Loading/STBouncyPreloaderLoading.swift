@@ -61,7 +61,7 @@ class STBouncyPreloaderLoading: UIView {
 }
 
 extension STBouncyPreloaderLoading {
-    internal func setupUI() {
+    fileprivate func setupUI() {
         self.alpha = 0
         
         spotLayer.frame = CGRect(x: 0, y: 0, width: lineWidth, height: lineWidth)
@@ -78,7 +78,7 @@ extension STBouncyPreloaderLoading {
         layer.addSublayer(spotReplicatorLayer)
     }
     
-    internal func updateUI() {
+    fileprivate func updateUI() {
         spotLayer.frame = CGRect(x: lineWidth / 2.0, y: (bounds.height - lineWidth) / 2.0, width: lineWidth, height: lineWidth)
         spotReplicatorLayer.frame = bounds
         spotReplicatorLayer.instanceTransform = CATransform3DMakeTranslation(bounds.width / CGFloat(spotCount), 0, 0)

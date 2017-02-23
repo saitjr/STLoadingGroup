@@ -61,7 +61,7 @@ class STArchLoading: UIView {
 }
 
 extension STArchLoading {
-    internal func setupUI() {
+    fileprivate func setupUI() {
         for _ in 0 ..< spotCount {
             let spotLayer = CAShapeLayer()
             spotLayer.lineCap = "round"
@@ -80,7 +80,7 @@ extension STArchLoading {
         }
     }
     
-    internal func updateUI() {
+    fileprivate func updateUI() {
         for i in 0 ..< spotCount {
             let spotLayer = spotGroup[i]
             let spotWidth = bounds.width * CGFloat((spotCount - i)) * 0.6

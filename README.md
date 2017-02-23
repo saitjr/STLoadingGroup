@@ -49,6 +49,7 @@ enum STLoadingStyle: String {
     case bouncyPreloader = "bouncyPreloader"
     case zhihu = "zhihu"
     case triangle = "triangle"
+    case pacMan = "pac man"
 }
 ```
 
@@ -76,6 +77,8 @@ class STLoadingGroup {
             loadingView = STZhiHuLoading(frame: bounds)
         case .triangle:
             loadingView = STTriangleLoading(frame: bounds)
+        case .pacMan:
+            loadingView = STPacManLoading(frame: bounds)
         // insert your code here
         }
     }
@@ -111,6 +114,10 @@ Loading animation in submit button.
 #### .triangle
 
 I found on web.
+
+#### .pacMan
+
+**Designed by** :  Dave Whyte
 
 ## MIT LICENSE
 
