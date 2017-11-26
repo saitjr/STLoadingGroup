@@ -105,7 +105,7 @@ extension STWalkLoading: STLoadingable {
         
         let spotLayer1 = spotGroup[0]
         let pathAnimation = CAKeyframeAnimation(keyPath: "position")
-        pathAnimation.path = UIBezierPath(arcCenter: CGPoint(x: bounds.width / 2.0, y: bounds.height / 2.0), radius: bounds.width / 2.0, startAngle: CGFloat(M_PI), endAngle: 0, clockwise: true).cgPath
+        pathAnimation.path = UIBezierPath(arcCenter: CGPoint(x: bounds.width / 2.0, y: bounds.height / 2.0), radius: bounds.width / 2.0, startAngle: CGFloat(Double.pi), endAngle: 0, clockwise: true).cgPath
         pathAnimation.calculationMode = kCAAnimationPaced
         pathAnimation.duration = animationDuration
         pathAnimation.repeatCount = Float.infinity

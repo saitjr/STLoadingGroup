@@ -135,8 +135,8 @@ extension STGlassesLoading: STLoadingable {
         let arcCenterLeft = CGPoint(x: radius, y: spotLayer1.frame.midY)
         let arcCenterRight = CGPoint(x: bounds.width - radius, y: arcCenterLeft.y)
         
-        let pathToRight1 = UIBezierPath(arcCenter: arcCenterLeft, radius: radius, startAngle: CGFloat(M_PI), endAngle: 0, clockwise: true)
-        let pathToRight2 = UIBezierPath(arcCenter: arcCenterRight, radius: radius, startAngle: CGFloat(M_PI), endAngle: 0, clockwise: true)
+        let pathToRight1 = UIBezierPath(arcCenter: arcCenterLeft, radius: radius, startAngle: CGFloat(Double.pi), endAngle: 0, clockwise: true)
+        let pathToRight2 = UIBezierPath(arcCenter: arcCenterRight, radius: radius, startAngle: CGFloat(Double.pi), endAngle: 0, clockwise: true)
         pathToRight1.append(pathToRight2)
         
         let pathToRightAnimation1 = CAKeyframeAnimation(keyPath: "position")
@@ -146,11 +146,11 @@ extension STGlassesLoading: STLoadingable {
         pathToRightAnimation1.repeatCount = Float.infinity
         spotLayer1.add(pathToRightAnimation1, forKey: "pathToRightAnimation1")
         
-        let pathToLeft1 = UIBezierPath(arcCenter: arcCenterLeft, radius: radius, startAngle: 0, endAngle: CGFloat(M_PI), clockwise: true)
+        let pathToLeft1 = UIBezierPath(arcCenter: arcCenterLeft, radius: radius, startAngle: 0, endAngle: CGFloat(Double.pi), clockwise: true)
         let spot2Animation = generalGroupAnimation(path: pathToLeft1, needRmoveOnCompletion: true, beginTime: 0)
         spotLayer2.add(spot2Animation, forKey: "spot2Animation")
         
-        let pathToLeft2 = UIBezierPath(arcCenter: arcCenterRight, radius: radius, startAngle: 0, endAngle: CGFloat(M_PI), clockwise: true)
+        let pathToLeft2 = UIBezierPath(arcCenter: arcCenterRight, radius: radius, startAngle: 0, endAngle: CGFloat(Double.pi), clockwise: true)
         let spot3Animation = generalGroupAnimation(path: pathToLeft2, needRmoveOnCompletion: false, beginTime: animationDuration / 2.0)
         spotLayer3.add(spot3Animation, forKey: "spot3Animation")
     }

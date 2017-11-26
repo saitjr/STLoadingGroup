@@ -86,7 +86,7 @@ extension STArchLoading {
             let spotWidth = bounds.width * CGFloat((spotCount - i)) * 0.6
             spotLayer.bounds = CGRect(x: 0, y: 0, width: spotWidth, height: spotWidth)
             spotLayer.position = CGPoint(x: bounds.width * 1.1, y: bounds.height / 2.0)
-            spotLayer.path = UIBezierPath(arcCenter: CGPoint(x: spotWidth / 2.0 - bounds.width * 0.3, y: spotWidth / 2.0), radius: spotWidth * 0.25, startAngle: CGFloat(M_PI), endAngle: CGFloat(M_PI * 2), clockwise: true).cgPath
+            spotLayer.path = UIBezierPath(arcCenter: CGPoint(x: spotWidth / 2.0 - bounds.width * 0.3, y: spotWidth / 2.0), radius: spotWidth * 0.25, startAngle: CGFloat(Double.pi), endAngle: CGFloat(Double.pi * 2), clockwise: true).cgPath
         }
     }
 }
