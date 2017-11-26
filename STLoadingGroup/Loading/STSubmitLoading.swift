@@ -110,7 +110,7 @@ extension STSubmitLoading: STLoadingable {
         
         let rotateAnimation = CABasicAnimation(keyPath: "transform.rotation")
         rotateAnimation.fromValue = 0
-        rotateAnimation.toValue = M_PI * 2
+        rotateAnimation.toValue = Double.pi * 2
         rotateAnimation.duration = animationDuration
         rotateAnimation.beginTime = CACurrentMediaTime() + strokeEndAnimation.duration
         rotateAnimation.repeatCount = Float.infinity

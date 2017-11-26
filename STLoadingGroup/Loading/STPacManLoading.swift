@@ -68,7 +68,7 @@ extension STPacManLoading {
             cycle.strokeStart = 0.25
             cycle.strokeEnd = 1
             
-            cycle.transform = CATransform3DMakeRotation(CGFloat(M_PI_2 * Double(i)), 0, 0, 1)
+            cycle.transform = CATransform3DMakeRotation(CGFloat(Double.pi_2 * Double(i)), 0, 0, 1)
         }
     }
     
@@ -149,8 +149,8 @@ extension STPacManLoading: STLoadingable {
             let cyclePath = cyclePaths[i]
             
             let rotateAnimation = CABasicAnimation(keyPath: "transform.rotation")
-            rotateAnimation.fromValue = M_PI_2 * Double(i)
-            rotateAnimation.toValue = M_PI_2 * Double(i) + (-M_PI_2 * 3)
+            rotateAnimation.fromValue = Double.pi_2 * Double(i)
+            rotateAnimation.toValue = Double.pi_2 * Double(i) + (-Double.pi_2 * 3)
             rotateAnimation.duration = animationDuration - 0.2
             
             let positionAnimation = CAKeyframeAnimation(keyPath: "position")
