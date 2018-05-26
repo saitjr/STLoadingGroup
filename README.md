@@ -8,6 +8,14 @@ A Group of Loading Animations.
 
 ![](./resources/loading.gif)
 
+## Installation using CocoaPods
+
+Just add this line to your Podfile:
+
+```ruby
+pod 'STLoadingGroup', :git => 'https://github.com/saitjr/STLoadingGroup.git'
+```
+
 ## Usage
 
 ```swift
