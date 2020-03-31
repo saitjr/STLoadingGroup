@@ -11,7 +11,7 @@ A Group of Loading Animations.
 ## Usage
 
 ```swift
-let loadingGroup = let loadingGroup = STLoadingGroup(side: side, style: style)
+let loadingGroup = STLoadingGroup(side: side, style: style)
 loadingGroup.show(inView: view)
 loadingGroup.startLoading()
 // stop:  loadnigGroup.stopLoading()
